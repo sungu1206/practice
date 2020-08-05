@@ -1,6 +1,6 @@
 
 body{
-background-color: #858585;
+background-color: #422700;
 }
 
 h1{
@@ -8,9 +8,12 @@ color: #ffffff;
 text-align: center;
 }
 
-div {
-background-color: red;
-     }
-div color{
-background-color: yellow;
+*{
+list- style: none;
+text-decoration: none;
+border-collapse: collapse;
+maergin: 0px;
+padding: 0px;
+color: #ffffff;
 }
+
