@@ -3,47 +3,32 @@
   text-decoration: none;
   border-collapse: collapse;
   }
+
+
 h1{
   font-size: 50px;
   text-align: center;
-  }
-ul{
-  list-style-type: none;
-  margin-left: 637px;
-  margin-right: 637px;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
 }
-
-li{
-  float: left;
-}
-
-li a{
-  display: inline-block;
-  color: white;
+.nav{
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
-
-li a:hover{
-  background-color: #111;
+.nav_1{
+  display: inline-block;
 }
-
-.Home{
-  background-color: red;
+ul{
+  display: inline-block;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
-
-
-
-.slider_img1{
-background-color: red;
+li{
+  display: inline-block;
+  margin: 25px;
 }
-.slider_img2{
-background-color: blue;
+.nav_2{
+  display: inline-block;
 }
-.slider_img3{
-background-color: yellow;
+.button{
+  display: inline-block;
+  margin: 25px;
 }

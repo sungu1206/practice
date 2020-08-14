@@ -24,29 +24,59 @@
   <body>
     <!-- Start Header -->
     <div class="haeder">
-      <a><h1>SunGu</h1></a>
+      <h1>SunGu</h1>
     </div>
     <!-- End Header -->
 
     <!-- Start Nav -->
     <div class="nav">
-      <ul>
-        <li><a href="index.html" class="Home">Home</a></li>
-        <li><a>Content</a></li>
-        <li><a>About</a></li>
-      </ul>
+      <div class="nav_1">
+        <ul>
+          <li><a href="" class="Home">Home</a></li>
+          <li><a href="">Content</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+      </div>
+      <div class="nav_2">
+        <input class="button" type="button" value="Night" onclick="
+          var target = document.querySelector('body');
+          if(this.value==='Night'){
+          target.style.backgroundColor='black';
+          target.style.color='white';
+          this.value='Day'
+
+          var link = document.querySelectorAll('a');
+          var i = 0;
+          while(i<link.length){
+          links[i].style.color='white';
+          i=i+1;
+          }
+
+        } else{
+          target.style.backgroundColor='white';
+          target.style.color='black';
+          this.value='Night'
+
+          var link = document.querySelectorAll('a');
+          var i = 0;
+          while(i<link.length){
+          links[i].style.color='black';
+          i=i+1;
+          }
+        }">
+      </div>
     </div>
     <!-- End Nav -->
 
     <!-- Start Slider -->
     <div class="slider">
-      <div class="slider_img1">
+      <div class="slider_img">
         <img src="" alt="">1
       </div>
-      <div class="slider_img2">
+      <div class="slider_img">
         <img src="" alt="">2
       </div>
-      <div class="slider_img3">
+      <div class="slider_img">
         <img src="" alt="">3
       </div>
     </div>
