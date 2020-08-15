@@ -5,6 +5,7 @@
   }
 
 
+
 h1{
   font-size: 50px;
   text-align: center;
@@ -29,6 +30,83 @@ li{
   display: inline-block;
 }
 .button{
-  display: inline-block;
   margin: 25px;
 }
+a:visited {
+  color: black;
+}
+
+
+
+.slider{
+  text-align: center;
+  margin-top: 100px;
+}
+
+.slider_img1{
+  display: inline-block;
+  background-color: red;
+  width: 400px;
+  height: 400px;
+}
+
+.slider_img2{
+  display: inline-block;
+  background-color: orange;
+  width: 400px;
+  height: 400px;
+}
+  
+.slider_img3{
+  display: inline-block;
+  background-color: yellow;
+  width: 400px;
+  height: 400px;
+}
+
+
+
+.gallery{
+  text-align: center;
+  margin-top: 250px;
+}
+
+.card1{
+  display: block;
+}
+.item1{
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  display: inline-block;
+  background-color: green;
+}
+
+.card2{
+  display: block;
+}
+.item2{
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  display: inline-block;
+  background-color: blue;
+}
+
+
+.card3{
+  display: block;
+}
+.item3{
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  display: inline-block;
+  background-color: powderblue;
+}
+
+
+
+.footer{
+  text-align: center;
+
