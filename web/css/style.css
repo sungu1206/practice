@@ -6,6 +6,7 @@
   list-style:none;
   margin: 0px;
   padding: 0px;
+  font-family: sans-serif;
 }
 
 /*----------------------------------------------------------------------
@@ -17,27 +18,31 @@ a:visited{
 a{
   color: white;
 }
-h1,h2,h3{
+.active a{
+  color: #CF9C67;
+}
+h2,h3{
   color: white;
 }
 h2{
   max-width: 1000px;
   margin: 0 auto;
 }
-.active a{
-  color: orange;
+.top p{
+  color: white;
 }
+
 /*-----------------------------------------------------------------------
-                              ↙starts Topbar↙
+                              ↙Starts Topbar↙
 -----------------------------------------------------------------------*/
 .wrap{
-  background-image: url('../images/bg_img.jpg');
+  background-image: url('../images/1920x700.jpg');
   background-repeat: repeat;
   width: 100%;
-  height: 600px;
+  height: 650px;
 }
 .top{
-  height: 600px;
+  height: 650px;
 }
 .max{
   max-width: 1000px;
@@ -47,7 +52,7 @@ h2{
   display: block;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 10px 0px 10px 0px;
+  padding: 15px 0px 15px 0px;
   text-align: right;
 }
 .topbar ul{
@@ -60,12 +65,13 @@ h2{
 /*-----------------------------------------------------------------------
                               ↖End Topbar↖
 -----------------------------------------------------------------------*/
+
 /*-----------------------------------------------------------------------
-                              ↙starts Header↙
+                              ↙Starts Header↙
 -----------------------------------------------------------------------*/
 header{
   display: block;
-  background-color: rgb(45,42,40,0.3);
+  background-color: rgb(45,45,45,0.3);
 }
 .header{
   max-width: 1000px;
@@ -88,5 +94,144 @@ header{
   margin-left: 30px;
 }
 /*-----------------------------------------------------------------------
-                              ↖starts Header↖
+                              ↖End Header↖
+-----------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------
+                              ↙Starts Main↙
+-----------------------------------------------------------------------*/
+.main{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 160.9px 0px 160.9px 0px;
+}
+article{
+  display: block;
+  text-align: center;
+}
+article p{
+  font-size: 25px;
+}
+article h3{
+  font-size: 3rem;
+  margin-top: 9px;
+}
+article ul{
+  margin-top: 35px;
+}
+article ul,li{
+  display: inline-block;
+}
+.btn1{
+  font-size: 15px;
+  margin-right: 5px;
+  padding: 10px 7px 10px 7px;
+  border: 1.5px solid #CF9C67;
+  border-radius: 5px;
+}
+.btn1:hover{
+  font-size: 15px;
+  margin-right: 5px;
+  padding: 10px 7px 10px 7px;
+  background-color: #CF9C67;
+}
+.btn2{
+  font-size: 15px;
+  margin-left: 5px;
+  padding: 10px 7px 10px 7px;
+  border: 1.5px solid #CF9C67;
+  border-radius: 5px;
+}
+.btn2:hover{
+  font-size: 15px;
+  margin-left: 5px;
+  padding: 10px 7px 10px 7px;
+  background-color: #CF9C67;
+}
+
+/*-----------------------------------------------------------------------
+                              ↖End Main↖
+-----------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------
+                              ↙Starts Content↙
+-----------------------------------------------------------------------*/
+.content{
+
+}
+section{
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 481.588px;
+  padding: 70px 0px 70px 0;
+}
+.sectiontitle{
+  display: block;
+  text-align: center;
+}
+.sectiontitle h4{
+  font-size: 30px;
+}
+.sectiontitle p{
+  color: gray;
+  font-size: 15px;
+  margin-top: 7px;
+}
+.group{
+  display: block;
+  margin-top: 35px;
+}
+.support{
+  display: inline-block;
+  width: 480px;
+  height: 340px;
+}
+.support h5{
+  font-size: 25px;
+  font-weight: normal;
+}
+.support p{
+  color: gray;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.photo{
+  display: inline-block;
+  float: right;
+}
+.read{
+  display: inline;
+}
+.read a{
+  color: white;
+  font-size: 15px;
+  padding: 10px 7px 10px 7px;
+  border: 1.5px solid #CF9C67;
+  border-radius: 5px;
+  background-color: #CF9C67;
+}
+.read a:hover{
+  color: #CF9C67;
+  font-size: 15px;
+  padding: 10px 7px 10px 7px;
+  border: 1.5px solid #CF9C67;
+  border-radius: 5px;
+  background-color: white;
+}
+/*-----------------------------------------------------------------------
+                              ↖End Content↖
+-----------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------
+                              ↙Starts Middle↙
+-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------
+                              ↖End Middle↖
+-----------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------
+                              ↙Starts Team↙
+-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------
+                              ↖End Team↖
 -----------------------------------------------------------------------*/
