@@ -21,6 +21,9 @@ a{
 .active a{
   color: #CF9C67;
 }
+.active a:hover{
+  color: orange;
+}
 h2,h3{
   color: white;
 }
@@ -31,17 +34,25 @@ h2{
 .top p{
   color: white;
 }
-
+.marginbottom{
+  margin-bottom: 35px;
+}
+.margintop{
+  margin-top: 9px;
+}
+.marginleft{
+  margin-left: 30px;
+}
 /*-----------------------------------------------------------------------
                               ↙Starts Topbar↙
 -----------------------------------------------------------------------*/
 .wrap{
+
+}
+.top{
   background-image: url('../images/1920x700.jpg');
   background-repeat: repeat;
   width: 100%;
-  height: 650px;
-}
-.top{
   height: 650px;
 }
 .max{
@@ -91,7 +102,6 @@ header{
 }
 .nav ul li{
   display: inline;
-  margin-left: 30px;
 }
 /*-----------------------------------------------------------------------
                               ↖End Header↖
@@ -114,37 +124,20 @@ article p{
 }
 article h3{
   font-size: 3rem;
-  margin-top: 9px;
-}
-article ul{
-  margin-top: 35px;
 }
 article ul,li{
   display: inline-block;
 }
-.btn1{
+.btn{
   font-size: 15px;
   margin-right: 5px;
   padding: 10px 7px 10px 7px;
   border: 1.5px solid #CF9C67;
   border-radius: 5px;
 }
-.btn1:hover{
+.btn:hover{
   font-size: 15px;
   margin-right: 5px;
-  padding: 10px 7px 10px 7px;
-  background-color: #CF9C67;
-}
-.btn2{
-  font-size: 15px;
-  margin-left: 5px;
-  padding: 10px 7px 10px 7px;
-  border: 1.5px solid #CF9C67;
-  border-radius: 5px;
-}
-.btn2:hover{
-  font-size: 15px;
-  margin-left: 5px;
   padding: 10px 7px 10px 7px;
   background-color: #CF9C67;
 }
@@ -157,12 +150,11 @@ article ul,li{
                               ↙Starts Content↙
 -----------------------------------------------------------------------*/
 .content{
-
+  height: auto;
 }
 section{
   max-width: 1000px;
   margin: 0 auto;
-  height: 481.588px;
   padding: 70px 0px 70px 0;
 }
 .sectiontitle{
@@ -175,16 +167,15 @@ section{
 .sectiontitle p{
   color: gray;
   font-size: 15px;
-  margin-top: 7px;
 }
 .group{
   display: block;
-  margin-top: 35px;
+  height: auto;
 }
 .support{
   display: inline-block;
   width: 480px;
-  height: 340px;
+  height: 360px;
 }
 .support h5{
   font-size: 25px;
@@ -200,9 +191,10 @@ section{
   float: right;
 }
 .read{
-  display: inline;
+  display: block;
 }
 .read a{
+  display: inline-block;
   color: white;
   font-size: 15px;
   padding: 10px 7px 10px 7px;
@@ -211,6 +203,7 @@ section{
   background-color: #CF9C67;
 }
 .read a:hover{
+  display: inline-block;
   color: #CF9C67;
   font-size: 15px;
   padding: 10px 7px 10px 7px;
@@ -225,6 +218,35 @@ section{
 /*-----------------------------------------------------------------------
                               ↙Starts Middle↙
 -----------------------------------------------------------------------*/
+.middle{
+  background-color: black;
+}
+.img{
+  max-width: 1000px;
+  margin: 0 auto;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.img ul{
+  display:block;
+  text-align: center;
+  height: auto;
+}
+.img ul li{
+  display: inline-block;
+  height: auto;
+}
+.imgover{
+  opacity: 1;
+  background-color: black;
+}
+.imgover:hover{
+  opacity: 0.6;
+  transition: .5s ease;
+  background-color: black;
+}
+
 /*-----------------------------------------------------------------------
                               ↖End Middle↖
 -----------------------------------------------------------------------*/
