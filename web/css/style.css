@@ -12,12 +12,6 @@
 /*----------------------------------------------------------------------
 
 -----------------------------------------------------------------------*/
-a:visited{
-  color: white;
-}
-a{
-  color: white;
-}
 .active a{
   color: #CF9C67;
 }
@@ -31,7 +25,7 @@ h2{
   max-width: 1000px;
   margin: 0 auto;
 }
-.top p{
+.top p,a{
   color: white;
 }
 .marginbottom{
@@ -43,12 +37,12 @@ h2{
 .marginleft{
   margin-left: 30px;
 }
+.padding{
+  padding: 70px 0px 70px 0;
+}
 /*-----------------------------------------------------------------------
                               ↙Starts Topbar↙
 -----------------------------------------------------------------------*/
-.wrap{
-
-}
 .top{
   background-image: url('../images/1920x700.jpg');
   background-repeat: repeat;
@@ -150,12 +144,10 @@ article ul,li{
                               ↙Starts Content↙
 -----------------------------------------------------------------------*/
 .content{
-  height: auto;
 }
 section{
   max-width: 1000px;
   margin: 0 auto;
-  padding: 70px 0px 70px 0;
 }
 .sectiontitle{
   display: block;
@@ -176,6 +168,8 @@ section{
   display: inline-block;
   width: 480px;
   height: 360px;
+  position: relative;
+  bottom: 38px;
 }
 .support h5{
   font-size: 25px;
@@ -188,7 +182,6 @@ section{
 }
 .photo{
   display: inline-block;
-  float: right;
 }
 .read{
   display: block;
@@ -239,12 +232,11 @@ section{
 }
 .imgover{
   opacity: 1;
-  background-color: black;
+  border: 1px solid white;
 }
 .imgover:hover{
   opacity: 0.6;
   transition: .5s ease;
-  background-color: black;
 }
 
 /*-----------------------------------------------------------------------
@@ -254,6 +246,51 @@ section{
 /*-----------------------------------------------------------------------
                               ↙Starts Team↙
 -----------------------------------------------------------------------*/
+.wrapteam{
+}
+footer a:visited{
+  color: black;
+}
+footer a:hover{
+  color: white;
+  background-color: black;
+  border-radius: 6px;
+}
+.team{
+  display: block;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+.teamname h4{
+  font-size: 30px;
+}
+.teamname p{
+  font-size: 15px;
+  color: gray;
+}
+.members{
+  display: block;
+}
+figure{
+  display: inline-block;
+}
+figure h6{
+  font-size: 15px;
+}
+figure p{
+  color: gray;
+  font-size: 10px;
+}
+
 /*-----------------------------------------------------------------------
                               ↖End Team↖
+-----------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------
+                              ↖Starts Bottom↖
+-----------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------
+                              ↖End Bottom↖
 -----------------------------------------------------------------------*/
