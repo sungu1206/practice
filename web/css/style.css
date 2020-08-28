@@ -40,6 +40,18 @@ h2{
 .padding{
   padding: 70px 0px 70px 0;
 }
+.maxwidth{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.imgover{
+  opacity: 1;
+  border: 1px solid white;
+}
+.imgover:hover{
+  opacity: 0.6;
+  transition: .5s ease;
+}
 /*-----------------------------------------------------------------------
                               ↙Starts Topbar↙
 -----------------------------------------------------------------------*/
@@ -48,10 +60,6 @@ h2{
   background-repeat: repeat;
   width: 100%;
   height: 650px;
-}
-.max{
-  max-width: 1000px;
-  margin: 0 auto;
 }
 .topbar{
   display: block;
@@ -79,8 +87,6 @@ header{
   background-color: rgb(45,45,45,0.3);
 }
 .header{
-  max-width: 1000px;
-  margin: 0 auto;
   padding: 30px 0px 30px 0px;
 }
 .logo{
@@ -105,8 +111,6 @@ header{
                               ↙Starts Main↙
 -----------------------------------------------------------------------*/
 .main{
-  max-width: 1000px;
-  margin: 0 auto;
   padding: 160.9px 0px 160.9px 0px;
 }
 article{
@@ -126,7 +130,7 @@ article ul,li{
   font-size: 15px;
   margin-right: 5px;
   padding: 10px 7px 10px 7px;
-  border: 1.5px solid #CF9C67;
+  border: 2px solid #CF9C67;
   border-radius: 5px;
 }
 .btn:hover{
@@ -143,12 +147,6 @@ article ul,li{
 /*-----------------------------------------------------------------------
                               ↙Starts Content↙
 -----------------------------------------------------------------------*/
-.content{
-}
-section{
-  max-width: 1000px;
-  margin: 0 auto;
-}
 .sectiontitle{
   display: block;
   text-align: center;
@@ -196,12 +194,7 @@ section{
   background-color: #CF9C67;
 }
 .read a:hover{
-  display: inline-block;
   color: #CF9C67;
-  font-size: 15px;
-  padding: 10px 7px 10px 7px;
-  border: 1.5px solid #CF9C67;
-  border-radius: 5px;
   background-color: white;
 }
 /*-----------------------------------------------------------------------
@@ -215,8 +208,6 @@ section{
   background-color: black;
 }
 .img{
-  max-width: 1000px;
-  margin: 0 auto;
   height: auto;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -224,18 +215,16 @@ section{
 .img ul{
   display:block;
   text-align: center;
-  height: auto;
 }
 .img ul li{
   display: inline-block;
-  height: auto;
 }
-.imgover{
+.jpgover{
   opacity: 1;
   border: 1px solid white;
 }
-.imgover:hover{
-  opacity: 0.6;
+.jpgover:hover{
+  opacity: 0.9;
   transition: .5s ease;
 }
 
@@ -258,8 +247,6 @@ footer a:hover{
 }
 .team{
   display: block;
-  max-width: 1000px;
-  margin: 0 auto;
   text-align: center;
 }
 .teamname h4{
@@ -290,7 +277,62 @@ figure p{
 /*-----------------------------------------------------------------------
                               ↖Starts Bottom↖
 -----------------------------------------------------------------------*/
+.bottom{
+  background-color: black;
+}
+.send{
+  color: white;
+  display: block;
+  text-align: center;
+}
+.send h5{
+  font-size: 30px;
+}
+.send p{
+  font-size: 15px;
+  color: gray;
+}
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+.email{
+  display: block;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 8px;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  border: 2px solid gray;
+}
+.email:hover{
+  background-color: black;
+  border: 2px solid white;
+  transition: .7s ease;
+}
 
 /*-----------------------------------------------------------------------
                               ↖End Bottom↖
+-----------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------
+                              ↖Starts Copyright↖
+-----------------------------------------------------------------------*/
+.end{
+  padding: 20px 0px 20px 0px;
+}
+.end p{
+    display: inline;
+}
+.end a{
+  color: #CF9C67;;
+}
+.floatright{
+  display: inline;
+  float: right;
+}
+/*-----------------------------------------------------------------------
+                              ↖End Copyright↖
 -----------------------------------------------------------------------*/
