@@ -9,24 +9,38 @@
   padding: 0px;
 }
 .wrap{
-  border: 15px solid rgb(169,118,159);
+  border: 15px solid #083b66;
 }
 .standard{
   max-width: 1000px;
+  min-width: 1000px;
   margin: 0 auto;
 }
 .padding_top_bottom{
   padding: 50px 0px 50px 0px;
 }
-.margin_top{
-  margin-top: px;
-}
 .margin_left{
+  margin-left: 30px;
+}
+.margin_top{
   margin-top: 30px;
 }
 .margin_bottom{
-  margin-top: px;
+  margin-bottom: 30px;
 }
+.border_style_1{
+  border: 10px solid #083b66;
+}
+.border_style_2{
+  border: 10px solid #d41313;
+}
+.border_style_3{
+  border: 10px solid #01233f;
+}
+.font{
+  font-size:0;
+}
+
 /*------------------------------------------------------------------------------
 ------------------------------------------------------------------------------*/
 
@@ -36,41 +50,161 @@
                                       top
 ------------------------------------------------------------------------------*/
 .logo{
-  display: inline-block;
+  display: inline;
+  width: 180px;
+  height: 99px;
 }
 .nav{
   display: block;
   width: auto;
-  height: 187px;
+  height: 99px;
   float: right;
 }
-.button{
+.list_bar{
   position: relative;
-  top: 54.25px;
+  top: 39.6px;
   width: 30px;
   height: 25px;
   cursor: pointer;
 }
-.first{
+.list_overlap{
   display: block;
   position: absolute;
   width: 30px;
   height: 5px;
-  background: #660066;
+}
+.first{
+  background: #d41313;
 }
 .second{
-  display: block;
-  position: absolute;
   top: 10px;
-  width: 30px;
-  height: 5px;
-  background: #660066;
+  background: #01233f;
 }
 .third{
-  display: block;
-  position: absolute;
   top: 20px;
-  width: 30px;
-  height: 5px;
-  background: #660066;
+  background: #083b66;
 }
+/*------------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+
+
+
+
+/*------------------------------------------------------------------------------
+                                      main
+------------------------------------------------------------------------------*/
+.frame_1{
+  display: inline-block;
+  width:  500px;
+  height: 600px;
+  border-radius: 8px;
+}
+.frame_wrap{
+  display: inline-block;
+  float: right;
+}
+.frame_overlap{
+  width: 430px;
+  height: 275px;
+  border-radius: 8px;
+}
+ /*------------------------------------------------------------------------------
+ ------------------------------------------------------------------------------*/
+
+
+
+ /*------------------------------------------------------------------------------
+                                       separation_line
+ ------------------------------------------------------------------------------*/
+.separation_line{
+  max-width: 1000px;
+  min-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 0px 50px 0px;
+}
+.separation{
+  height: 1px;
+  border-top: 5px dotted #083b66;
+}
+ /*------------------------------------------------------------------------------
+ ------------------------------------------------------------------------------*/
+
+
+
+ /*------------------------------------------------------------------------------
+                                       middle
+ ------------------------------------------------------------------------------*/
+.gallery{
+  height: 1012.5px;
+}
+.picture_overlap{
+  display: inline-block;
+  width: 293.3333333333333px;
+  height: 297.5px;
+  border-radius: 8px;
+}
+ /*------------------------------------------------------------------------------
+ ------------------------------------------------------------------------------*/
+
+
+
+
+ /*------------------------------------------------------------------------------
+                                       container
+ ------------------------------------------------------------------------------*/
+.container{
+  display: block;
+  text-align: center;
+}
+.item_overlap{
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+
+ /*------------------------------------------------------------------------------
+ ------------------------------------------------------------------------------*/
+
+
+
+ /*------------------------------------------------------------------------------
+                                      boxes
+ ------------------------------------------------------------------------------*/
+.thing{
+  height: 300px;
+  border-top: 10px solid #083b66;
+  border-right: 10px solid #d41313;
+  border-left: 10px solid #d41313;
+  border-bottom: 10px solid #083b66;
+}
+ /*------------------------------------------------------------------------------
+ ------------------------------------------------------------------------------*/
+
+
+
+ /*------------------------------------------------------------------------------
+                                      footer
+ ------------------------------------------------------------------------------*/
+ .footer{
+   font-size: 15px;
+ }
+ .copyright{
+   display: block;
+   height: 23px;
+   margin-bottom: 10px;
+ }
+ .copyright p{
+   display: inline;
+   margin-left: 5px;
+ }
+ .left{
+   margin-left: 5px;
+}
+ .float_right{
+   float: right;
+   margin-right: 5px;
+ }
+ /*------------------------------------------------------------------------------
+ ------------------------------------------------------------------------------*/
