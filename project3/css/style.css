@@ -157,7 +157,7 @@
   text-align: center;
 }
 .item_overlap{
-  display: inline-block;
+  display: inline-block;;
   width: 200px;
   height: 200px;
   border-radius: 8px;
@@ -189,6 +189,7 @@
  ------------------------------------------------------------------------------*/
  .footer{
    font-size: 15px;
+   padding-top: 50px;
  }
  .copyright{
    display: block;
