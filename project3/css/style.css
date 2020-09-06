@@ -61,7 +61,11 @@
   float: right;
 }
 .hidden_menu{
-
+  background-color: black;
+  opacity: 0.5;
+}
+.hidden_menu a{
+  color : white;
 }
 .list_bar{
   position: relative;
