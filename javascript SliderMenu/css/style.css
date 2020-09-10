@@ -1,0 +1,32 @@
+*{
+  text-decoration: none;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.menu{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.menu a{
+  padding: 10px 10px 10px 45px;
+  font-size: 40px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.menu a:hover{
+  color: lightgray;
+}
+.open a{
+  font-size: 40px;
+  color: black;
+}

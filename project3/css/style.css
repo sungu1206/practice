@@ -56,23 +56,20 @@
 }
 .nav{
   display: block;
-  width: auto;
+  width:40px;
   height: 99px;
   float: right;
 }
-.hidden_menu{
-  background-color: black;
-  opacity: 0.5;
-}
-.hidden_menu a{
-  color : white;
-}
-.list_bar{
+.nav_bar{
   position: relative;
-  top: 39.6px;
-  width: 30px;
-  height: 25px;
+  width: 40px;
+  height: 99px;
   cursor: pointer;
+}
+.nav_bar span{
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
 }
 .list_overlap{
   display: block;
