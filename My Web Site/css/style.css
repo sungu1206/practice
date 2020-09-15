@@ -4,11 +4,6 @@
   margin: 0px;
   padding: 0px;
 }
-.standard{
-  max-width: 1000px;
-  min-width: 1000px;
-  margin: 0 auto;
-}
 .padding_top_bottom{
   padding: 30px 0px 30px 0px;
 }
@@ -50,13 +45,17 @@
   background-color: black;
 }
 .nav li{
-  padding: 8px 70px 8px 70px;
+  padding: 8px 90px 8px 90px;
 }
 .nav a{
+  display: block;
   font-size: 35px;
   color: gray;
   transition: 0.3s;
 }
 .nav a:hover{
   color: lightgray;
+}
+li .exit{
+  display: inline-block;
 }
