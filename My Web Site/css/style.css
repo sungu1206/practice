@@ -1,18 +1,21 @@
 *{
-  text-decoration: none;
   list-style: none;
+  text-decoration: none;
   margin: 0px;
   padding: 0px;
-}
-.padding_top_bottom{
-  padding: 30px 0px 30px 0px;
 }
 .standard{
   max-width: 1000px;
   margin: 0 auto;
 }
-.margin_top{
-  margin-top: 5px;
+.padding_top_bottom{
+  padding: 50px 0px 50px 0px;
+}
+.padding_big{
+  padding: 15px 60px 15px 60px;
+}
+.padding_small{
+  padding: 10px 60px 10px 60px;
 }
 .logo{
   display: inline-block;
@@ -22,17 +25,17 @@
 }
 .nav_bar{
   display: inline-block;
-  float: right;
-  position: relative;
-  top: 23.387500000000003px;
   cursor: pointer;
+  float: right;
 }
-.bar{
+.nav_bar div{
   width: 30px;
   height: 5px;
   background-color: black;
 }
-
+.margin_top{
+  margin-top: 5px;
+}
 .nav{
   height: 100%;
   width: 0px;
@@ -40,22 +43,29 @@
   top: 0px;
   right: 0px;
   z-index: 1;
-  overflow: hidden;
   transition: 0.5s;
   background-color: black;
 }
-.nav li{
-  padding: 8px 90px 8px 90px;
-}
 .nav a{
-  display: block;
-  font-size: 35px;
+  font-size: 50px;
   color: gray;
   transition: 0.3s;
 }
 .nav a:hover{
   color: lightgray;
 }
-li .exit{
+.exit{
   display: inline-block;
+  font-size: 60px;
+  margin-top: 15px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.dropdown_list{
+  display: block;
+  background-color: rgb(40,40,40);
+}
+.dropdown_list a{
+  font-size: 30px;
+  margin-left: 22px;
 }
