@@ -1,9 +1,18 @@
-// nav
-document.getElementsByClassName('nav_bar')[0].addEventListener('click', function openNav(){
-  document.getElementsByClassName('nav')[0].style.width = '304.425px';
-});
-document.getElementsByClassName('exit')[0].addEventListener('click', function closeNav(){
-  document.getElementsByClassName('nav')[0].style.width = '0px';
-});
+document.getElementsByClassName('nav-bar')[0].addEventListener('click', function navbarClick(){
+  document.getElementsByClassName('nav-bar')[0].classList.toggle('trans');
+  var a = document.getElementsByClassName('nav');
+  var b = document.getElementsByClassName('nav-bar');
+    if(a[0].style.width === ''){
+      a[0].style.width = '304px';
+    }else {
+      a[0].style.width = '';
+    }
+  });
 
-// drop down
+
+
+  document.getElementsByClassName('dropdown-1,dropdown-2')[0].addEventListener('click', function dropdownClick(){
+    var i =   document.getElementsByClassName('dropdown-1');
+    var j =   document.getElementsByClassName('dropdown-2');
+    if()
+  });

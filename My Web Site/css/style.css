@@ -1,40 +1,58 @@
+/*overall*/
 *{
   list-style: none;
   text-decoration: none;
   margin: 0px;
   padding: 0px;
+  font-family: inherit;
 }
+/*partial*/
 .standard{
   max-width: 1000px;
   margin: 0 auto;
 }
-.padding_top_bottom{
+.padding-top-bottom{
   padding: 50px 0px 50px 0px;
 }
-.padding_big{
-  padding: 15px 60px 15px 60px;
+.padding-bottom{
+  padding-bottom: 10px;
 }
-.padding_small{
-  padding: 10px 60px 10px 60px;
+.margin-top{
+  margin-top: 80px;
 }
+/*top*/
 .logo{
   display: inline-block;
 }
 .logo img{
-  width: 100px;
+  width: 150px;
 }
-.nav_bar{
+.nav-bar{
   display: inline-block;
-  cursor: pointer;
   float: right;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
 }
-.nav_bar div{
-  width: 30px;
+.first,.second,.third{
+  width: 35px;
   height: 5px;
+  transition: 0.4s;
   background-color: black;
 }
-.margin_top{
-  margin-top: 5px;
+.second,.third{
+  margin-top: 6px;
+}
+.trans .first{
+  transform: rotate(-45deg)  translate(-5px,10px);
+  background-color: lightgray;
+}
+.trans .second{
+  opacity: 0;
+}
+.trans .third{
+  transform: rotate(45deg) translate(-5px,-10px);
+  background-color: gray;
 }
 .nav{
   height: 100%;
@@ -43,29 +61,27 @@
   top: 0px;
   right: 0px;
   z-index: 1;
+  overflow: hidden;
   transition: 0.5s;
   background-color: black;
 }
 .nav a{
-  font-size: 50px;
+  display: block;
+  text-align: center;
   color: gray;
-  transition: 0.3s;
+  font-size: 40px;
+  padding: 10px 55px 10px 55px;
+  transition: 0.35s;
 }
 .nav a:hover{
   color: lightgray;
 }
-.exit{
-  display: inline-block;
-  font-size: 60px;
-  margin-top: 15px;
-  margin-left: 60px;
-  margin-right: 60px;
+.nav li:hover{
+  background-color: #202020;
 }
-.dropdown_list{
-  display: block;
-  background-color: rgb(40,40,40);
+.dropdown1,.dropdown2{
+  display: none;
 }
-.dropdown_list a{
-  font-size: 30px;
-  margin-left: 22px;
+.font{
+  font-size: 20px;
 }
