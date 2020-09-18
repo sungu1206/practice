@@ -1,3 +1,4 @@
+
 document.getElementsByClassName('nav-bar')[0].addEventListener('click', function navbarClick(){
   document.getElementsByClassName('nav-bar')[0].classList.toggle('trans');
   var a = document.getElementsByClassName('nav');
@@ -8,11 +9,13 @@ document.getElementsByClassName('nav-bar')[0].addEventListener('click', function
       a[0].style.width = '';
     }
   });
-
-
-
-  document.getElementsByClassName('dropdown-1,dropdown-2')[0].addEventListener('click', function dropdownClick(){
-    var i =   document.getElementsByClassName('dropdown-1');
-    var j =   document.getElementsByClassName('dropdown-2');
-    if()
-  });
+document.getElementsByClassName('dropdown-1')[0].addEventListener('click',function dropdownClick(){
+  var c = document.getElementsByClassName('dropdown-list-1');
+      c[0].classList.toggle('drop');
+      c[0].style.backgroundColor = '#f0f0f0';
+});
+document.getElementsByClassName('dropdown-2')[0].addEventListener('click',function dropdownClick(){
+  var d = document.getElementsByClassName('dropdown-list-2');
+      d[0].classList.toggle('drop');
+      d[0].style.backgroundColor = '#f0f0f0';
+});
