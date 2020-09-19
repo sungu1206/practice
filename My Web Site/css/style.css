@@ -54,6 +54,9 @@
   transform: rotate(45deg) translate(-5px,-10px);
   background-color: gray;
 }
+.trans .dropdown-list-1,.dropdown-list-2{
+  display: none;
+}
 .nav{
   height: 100%;
   width: 0px;
@@ -95,6 +98,6 @@
   background-color: lightgray;
   color: black;
 }
-.font{
+.text-icon{
   font-size: 20px;
 }
