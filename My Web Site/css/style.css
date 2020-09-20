@@ -54,9 +54,6 @@
   transform: rotate(45deg) translate(-5px,-10px);
   background-color: gray;
 }
-.trans .dropdown-list-1,.dropdown-list-2{
-  display: none;
-}
 .nav{
   height: 100%;
   width: 0px;
@@ -81,13 +78,8 @@
 .nav a:hover{
   color: white;
 }
-.drop.dropdown-list-1{
-  display: block;
-}
-.drop.dropdown-list-2{
-  display: block;
-}
-.dropdown-list-1, .dropdown-list-2{
+.dropdown-list-1,.dropdown-list-2{
+  background-color: #f0f0f0;
   display: none;
 }
 .dropdown-list-1 a, .dropdown-list-2 a{
@@ -100,4 +92,13 @@
 }
 .text-icon{
   font-size: 20px;
+}
+.dropdown-1, .dropdown-2{
+  position: relative;
+}
+li:hover .dropdown-list-1{
+  display: block;
+}
+li:hover .dropdown-list-2{
+  display: block;
 }
