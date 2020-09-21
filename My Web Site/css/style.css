@@ -31,7 +31,8 @@
   display: inline-block;
   float: right;
   cursor: pointer;
-  position: relative;
+  position: fixed;
+  right: 260px;
   z-index: 2;
 }
 .first,.second,.third{
@@ -54,6 +55,7 @@
   transform: rotate(45deg) translate(-5px,-10px);
   background-color: gray;
 }
+
 .nav{
   height: 100%;
   width: 0px;
@@ -61,9 +63,10 @@
   top: 0px;
   right: 0px;
   z-index: 1;
-  overflow: scroll;
+  overflow: hidden;
   transition: 0.5s;
   background-color: black;
+  border-radius: 50px 0px 0px 50px;
 }
 .nav a{
   display: block;
@@ -78,20 +81,42 @@
 .nav a:hover{
   color: white;
 }
-.dropdown-list-1,.dropdown-list-2{
+.dropdown-list-1{
+  background-color: black;
+  display: none;
+  position: absolute;
+  right: 305px;
+  top: 90px;
+  border-radius: 10px;
+}
+.dropdown-list-2{
+  background-color: black;
+  display: none;
+  position: absolute;
+  right: 305px;
+  top: 240px;
+  border-radius: 10px;
+}
+.dropdown-list-3{
   background-color: #f0f0f0;
   display: none;
 }
 .dropdown-list-1 a, .dropdown-list-2 a{
   border: none;
+  color: lightgray;
+}
+.dropdown-list-3 a{
+  border: none;
   color: black;
 }
 .dropdown-list-1 a:hover ,.dropdown-list-2 a:hover{
-  background-color: lightgray;
-  color: black;
+  background-color: gray;
+  color: white;
+  border-radius: 10px;
 }
-.text-icon{
-  font-size: 20px;
+.dropdown-list-3 a:hover{
+  color: black;
+  background-color: lightgray;
 }
 .dropdown-1, .dropdown-2{
   position: relative;
@@ -101,4 +126,14 @@ li:hover .dropdown-list-1{
 }
 li:hover .dropdown-list-2{
   display: block;
+}
+li:hover .dropdown-list-3{
+  display: block;
+}
+.text-icon{
+  font-size: 20px;
+}
+/* */
+.main{
+  position: relative;
 }
