@@ -4,136 +4,31 @@
   text-decoration: none;
   margin: 0px;
   padding: 0px;
-  font-family: inherit;
+  font-family: 'Nanum Gothic', sans-serif;
 }
+
 /*partial*/
 .standard{
   max-width: 1000px;
   margin: 0 auto;
 }
-.padding-top-bottom{
-  padding: 50px 0px 50px 0px;
+.mg_left{
+  margin-left: 30px;
 }
-.padding-bottom{
-  padding-bottom: 10px;
+.pd_top{
+  padding-top: 30px;
 }
-.margin-top{
-  margin-top: 90px;
+.pd_top_bottom{
+  padding: 20px 0px 20px 0px;
 }
-/*top*/
+/* */
+.wraper{
+  background-color: rgba(210, 210, 210, 0.5);
+}
 .logo{
   display: inline-block;
 }
-.logo img{
-  width: 150px;
-}
-.nav-bar{
-  display: inline-block;
-  float: right;
-  cursor: pointer;
-  position: fixed;
-  right: 260px;
-  z-index: 2;
-}
-.first,.second,.third{
-  width: 35px;
-  height: 5px;
-  transition: 0.4s;
-  background-color: black;
-}
-.second,.third{
-  margin-top: 6px;
-}
-.trans .first{
-  transform: rotate(-45deg)  translate(-5px,10px);
-  background-color: lightgray;
-}
-.trans .second{
-  opacity: 0;
-}
-.trans .third{
-  transform: rotate(45deg) translate(-5px,-10px);
-  background-color: gray;
-}
-
-.nav{
-  height: 100%;
-  width: 0px;
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  z-index: 1;
-  overflow: hidden;
-  transition: 0.5s;
-  background-color: black;
-  border-radius: 50px 0px 0px 50px;
-}
-.nav a{
-  display: block;
-  text-align: center;
-  color: rgb(190, 190, 190);
-  font-size: 40px;
-  padding: 10px 55px 10px 55px;
-  transition: 0.35s;
-  border-top: 1px solid rgb(190, 190, 190);
-  border-bottom: 1px solid rgb(190, 190, 190);
-}
-.nav a:hover{
-  color: white;
-}
-.dropdown-list-1{
-  background-color: black;
-  display: none;
-  position: absolute;
-  right: 305px;
-  top: 90px;
-  border-radius: 10px;
-}
-.dropdown-list-2{
-  background-color: black;
-  display: none;
-  position: absolute;
-  right: 305px;
-  top: 240px;
-  border-radius: 10px;
-}
-.dropdown-list-3{
-  background-color: #f0f0f0;
-  display: none;
-}
-.dropdown-list-1 a, .dropdown-list-2 a{
-  border: none;
-  color: lightgray;
-}
-.dropdown-list-3 a{
-  border: none;
+.logo a , .nav a{
   color: black;
 }
-.dropdown-list-1 a:hover ,.dropdown-list-2 a:hover{
-  background-color: gray;
-  color: white;
-  border-radius: 10px;
-}
-.dropdown-list-3 a:hover{
-  color: black;
-  background-color: lightgray;
-}
-.dropdown-1, .dropdown-2{
-  position: relative;
-}
-li:hover .dropdown-list-1{
-  display: block;
-}
-li:hover .dropdown-list-2{
-  display: block;
-}
-li:hover .dropdown-list-3{
-  display: block;
-}
-.text-icon{
-  font-size: 20px;
-}
-/* */
-.main{
-  position: relative;
-}
+ 
