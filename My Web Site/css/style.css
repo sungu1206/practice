@@ -16,19 +16,54 @@
   margin-left: 30px;
 }
 .pd_top{
-  padding-top: 30px;
+
 }
 .pd_top_bottom{
   padding: 20px 0px 20px 0px;
 }
 /* */
 .wraper{
-  background-color: rgba(210, 210, 210, 0.5);
+  background-color: rgba(230, 230, 230, 0.5);
 }
+
 .logo{
   display: inline-block;
 }
 .logo a , .nav a{
   color: black;
 }
- 
+.header{
+  position: relative;
+}
+.logo{
+  display: inline-block;
+}
+
+.nav{
+  display: inline-block;
+  position: absolute;
+  top: 14px;
+  right: 0px;
+}
+.nav li{
+  display: inline-block;
+  margin-left: -4px
+}
+.nav a{
+  padding: 14px 9px 14px 9px;
+}
+.nav a:hover{
+  background-color: lightgray;
+  transition: 0.3s;
+}
+
+.drop{
+  display: none;
+  position: absolute;
+  top: 32px;
+  background-color: rgba(230, 230, 230, 0.5);
+}
+.drop a{
+  display: block;
+  padding: 5px 19px 5px 19px;
+}
