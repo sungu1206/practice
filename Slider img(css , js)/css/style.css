@@ -1,0 +1,22 @@
+body{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.slider_img_1{
+  display: block;
+  width: 1000px;
+  height: 550px;
+  background-color: red;
+}
+.slider_img_2{
+  display: none;
+  width: 1000px;
+  height: 550px;
+  background-color: orange;
+}
+.slider_img_3{
+  display: none;
+  width: 1000px;
+  height: 550px;
+  background-color: yellow;
+}
