@@ -1,22 +1,18 @@
-body{
-  max-width: 1000px;
-  margin: 0 auto;
+*{
+  list-style: none;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-.slider_img_1{
-  display: block;
-  width: 1000px;
-  height: 550px;
-  background-color: red;
+.slider{
+  width: 32%;
+  margin: auto;
+  border: 5px solid black;
+  /* overflow: hidden; */
 }
-.slider_img_2{
-  display: none;
-  width: 1000px;
-  height: 550px;
-  background-color: orange;
-}
-.slider_img_3{
-  display: none;
-  width: 1000px;
-  height: 550px;
-  background-color: yellow;
+.slide{
+  display: flex;
+  width: 100%;
+  height: 300px;
 }
