@@ -1,22 +1,40 @@
-const innerSlide = document.querySelector('.slider');
-const innerImages = document.querySelectorAll('.slide img');
+const carouselSlide = document.querySelector('.slide');
+const carouselImages = document.querySelectorAll('.slide img');
 
-const nextBtn = document.querySelector('.nextBtn');
+//Button
 const prevBtn = document.querySelector('.prevBtn');
+const nextBtn = document.querySelector('.nextBtn');
 
+//Counter
 let counter = 1;
-const size = innerImages[0].clientWidth;
+const size = carouselImages[0].clientWidth;
 
-innerSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
-nextBtn.addEventListener('click' , function(){
-  innerSlide.style.transition = 'transform 0.4s ease-in-out';
+//Button Listeners
+nextBtn.addEventListener('click', function(){
+  if (counter >= carouselImages.length -1) return;
+  carouselSlide.style.transition = 'transform 0.5s ease-in-out';
   counter++;
-  innerSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+  carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
 
-prevBtn.addEventListener('click' , function(){
-  innerSlide.style.transition = 'transform 0.4s ease-in-out';
+prevBtn.addEventListener('click', function(){
+  if (counter <= 0) return;
+  carouselSlide.style.transition = 'transform 0.5s ease-in-out';
   counter--;
-  innerSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+  carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+});
+
+carouselSlide.addEventListener('transitionend', function(){
+  if (carouselImages[counter].className === 'last') {
+    carouselSlide.style.transition = 'none';
+    counter = carouselImages.length - 2 ;
+    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+  }
+  if (carouselImages[counter].className === 'first') {
+    carouselSlide.style.transition = 'none';
+    counter = carouselImages.length - counter ;
+    carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+  }
 });
