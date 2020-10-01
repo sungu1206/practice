@@ -13,6 +13,9 @@
   width: 100%;
   height: 300px;
 }
-button{
-  position: absolute;
+.prevBtn{
+  position: relative;
+}
+.nextBtn{
+  position: relative;
 }
