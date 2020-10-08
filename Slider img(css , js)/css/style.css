@@ -14,8 +14,10 @@
   height: 300px;
 }
 .prevBtn{
-  position: relative;
+  position: absolute;
+  left: 0px;
 }
 .nextBtn{
-  position: relative;
+  position: absolute;
+  right: 0px;
 }
