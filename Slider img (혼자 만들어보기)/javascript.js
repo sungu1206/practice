@@ -7,38 +7,36 @@ const backBtn = document.querySelector('.back');
 let counter = 1;
 const size = carouselSliderImg[0].clientWidth;
 
-// carouselSlider.style.transform = 'translateX('+(`${-size * counter}`)+'px)';
-// carouselSlider.style.transform = 'translateX('+(`${-size * counter}`)+'px)';
-// overBtn.addEventListener('click' , () => {
-//     if(counter >= carouselSliderImg.length - 1){
-//         return;
-//     }else{
-//         carouselSlider.style.transition = 'transform 0.5s ease-in-out'
-//         counter++;
-//         carouselSlider.style.transform = 'translateX('+(`${-size * counter}`)+'px)';
-//     }
-// });
-// backBtn.addEventListener('click' , () => {
-//     if(counter <= 0){
-//       return;
-//     }else{
-//         carouselSlider.style.transition = 'transform 0.5s ease-in-out'
-//         counter--;
-//         carouselSlider.style.transform = 'translateX('+(`${-size * counter}`)+'px)'; 
-//     }
-// });
-
-
-function subtract(x , y) {
-    return x - y;
-}
-
-function multiply(x , y) {
-    return x * y;
-}
-
-overBtn.addEventListener('click' , function surprise(operator){
-    let result = operator(carouselSliderImg.length-1,counter);
-    return;
+carouselSlider.style.transform = 'translateX('+(`${-size * counter}`)+'px)';
+carouselSlider.style.transform = 'translateX('+(`${-size * counter}`)+'px)';
+overBtn.addEventListener('click' , () => {
+    if(counter >= carouselSliderImg.length - 1){
+        return;
+    }else{
+        carouselSlider.style.transition = 'transform 0.5s ease-in-out'
+        console.log(counter++);
+        carouselSlider.style.transform = 'translateX('+(`${-size * counter}`)+'px)';
+    }
 });
-console.log(surprise(subtract));
+backBtn.addEventListener('click' , () => {
+    if(counter <= 0){
+      return;
+    }else{
+        carouselSlider.style.transition = 'transform 0.5s ease-in-out'
+        counter--;
+        carouselSlider.style.transform = 'translateX('+(`${-size * counter}`)+'px)'; 
+    }
+});
+
+carouselSlider.addEventListener('transitionend', () => {
+  if(carouselSliderImg[counter].className =='last'){
+      counter = 1;
+      carouselSlider.style.transition = 'none';
+      carouselSlider.style.transform = 'translateX('+(`${-size * counter}`)+'px)';
+    }
+  if(carouselSliderImg[counter].className =='first'){
+    counter = carouselSliderImg.length - 2;
+    carouselSlider.style.transition = 'none';
+    carouselSlider.style.transform = 'translateX('+(`${-size * counter}`)+'px)';
+    }
+});
