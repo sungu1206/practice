@@ -1,60 +1,13 @@
 /*overall*/
-*{
+* {
   list-style: none;
   text-decoration: none;
   margin: 0px;
   padding: 0px;
-  font-family: 'Nanum Gothic', sans-serif;
 }
-
-/*partial*/
-.standard{
-  max-width: 1000px;
-  min-width: 1000px;
-  margin: 0 auto;
-}
-.mg_left{
-  margin-left: 30px;
-}
-.mg_right{
-  margin-right: 30px;
-}
-/**/
-.header{
-  position: relative;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-.logo{
-  display: inline-block;
-}
-.logo img{
-  width: 65px;
-  margin-top: 15px;
-}
-.nav{
-  display: inline-block;
-  position: absolute;
-  top: 15px;
-  right: 0px;
-}
-.nav li{
-  display: inline-block;
-  margin-left: -4px;
-}
-.nav a{
+.loadingBar {
   display: block;
-  padding: 10px 15px 10px 15px;
-  font-size: 25px;
-  color: black;
-}
-.nav li:hover{
-  background-color: #f0f0f0;
-  border-radius: 15px;
-}
-.loading{
-  width: 0px;
+  width: ;
   height: 5px;
-  background-color: orange;
-  transition: 5s;
+  background-color: black;
 }
