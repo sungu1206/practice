@@ -4,10 +4,75 @@
   text-decoration: none;
   margin: 0px;
   padding: 0px;
+  font-family: "Turret Road", cursive;
 }
-.loadingBar {
-  display: block;
-  width: ;
-  height: 5px;
-  background-color: black;
+:root {
+  --text-color: #353535;
+  --body-background-color: #f4f4f7;
+  --header-background-color: #ffffff;
+  --accent-color: #f05000;
+  --margin: 12px;
+  --size-a: 20px;
+  --size-b: 24px;
+}
+
+body {
+  height: 1000px;
+  background-color: var(--body-background-color);
+}
+
+header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-background-color);
+  padding: 20px 70px;
+}
+
+.left {
+  display: flex;
+}
+
+.logo a {
+  color: var(--accent-color);
+  font-size: 32px;
+  font-weight: 900;
+  margin-right: var(--margin);
+}
+
+.left_nav {
+  display: flex;
+  align-items: center;
+}
+.left_nav li {
+  margin-left: var(--size-a);
+  margin-right: var(--size-a);
+}
+.left_nav li:hover {
+  border-bottom: 3px solid var(--accent-color);
+  transition: 0.3s;
+}
+.left_nav a {
+  color: var(--text-color);
+}
+
+.right {
+  display: flex;
+}
+.right_nav {
+  display: flex;
+}
+.right_nav li {
+  margin-right: var(--margin);
+  margin-left: var(--margin);
+}
+.right_nav a {
+  color: var(--text-color);
+  font-size: var(--size-a);
+}
+.login:hover {
+  border-bottom: 3px solid var(--accent-color);
+  transition: 0.3s;
 }
