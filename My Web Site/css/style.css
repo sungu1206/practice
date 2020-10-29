@@ -29,6 +29,7 @@ header {
   align-items: center;
   background-color: var(--header-background-color);
   padding: 20px 70px;
+  z-index: 1;
 }
 
 .left {
@@ -39,6 +40,7 @@ header {
   color: var(--accent-color);
   font-size: 32px;
   font-weight: 900;
+  margin-left: var(--margin);
   margin-right: var(--margin);
 }
 
@@ -72,7 +74,24 @@ header {
   color: var(--text-color);
   font-size: var(--size-a);
 }
+
 .login:hover {
   border-bottom: 3px solid var(--accent-color);
   transition: 0.3s;
+}
+
+.sideMenu {
+  width: 250px;
+  height: 100%;
+  z-index: 0;
+  background-color: var(--accent-color);
+}
+.sideBtn {
+  width: 20px;
+  height: 80px;
+  position: absolute;
+  top: 45%;
+  left: 250px;
+  background-color: black;
+  border-radius: 0 10px 10px 0;
 }
