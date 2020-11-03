@@ -1,4 +1,4 @@
-/*overall*/
+/* Over All */
 * {
   list-style: none;
   text-decoration: none;
@@ -6,127 +6,172 @@
   padding: 0px;
   font-family: "Turret Road", cursive;
 }
+
+/* Color,Size Var */
 :root {
   --text-color: #353535;
   --body-background-color: #f4f4f7;
   --header-background-color: #ffffff;
   --accent-color: #f05000;
-  --margin: 12px;
-  --size-a: 20px;
-  --size-b: 24px;
   --shadow: rgba(0, 0, 0, 0.1);
+  --size-a: ;
+  --size-b: ;
+  --size-c: 20px;
+  --size-d: 25px;
 }
 
+/* Body */
 body {
   background-color: var(--body-background-color);
+  overflow: hidden;
 }
 
+/* Header */
 header {
   display: flex;
+  justify-content: space-between;
   position: sticky;
   top: 0;
-  justify-content: space-between;
-  align-items: center;
+  padding: 20px 80px 20px 80px;
   background-color: var(--header-background-color);
-  padding: 20px 70px;
-  z-index: 2;
-  box-shadow: 0px 2px 1px 0px var(--shadow);
+  box-shadow: 0px 3px 3px 0px var(--shadow);
+  z-index: 3;
+}
+header a {
+  color: var(--text-color);
 }
 
-.left {
-  display: flex;
-}
-
-.logo a {
+/* Logo */
+.logo {
   color: var(--accent-color);
-  font-size: 32px;
-  font-weight: 900;
-  margin-left: var(--margin);
-  margin-right: 40px;
+  font-size: var(--size-d);
+  margin-right: 80px;
 }
 
+/* Left Nav */
 .left_nav {
   display: flex;
   align-items: center;
 }
 .left_nav li {
-  margin-left: var(--size-a);
-  margin-right: var(--size-a);
-}
-.left_nav li:hover {
-  border-bottom: 3px solid var(--accent-color);
-  border-radius: 8px;
-  transition: 0.3s;
+  margin-left: var(--size-d);
 }
 .left_nav a {
-  color: var(--text-color);
+  border-bottom: 2px solid var(--header-background-color);
 }
-
-.right {
+.left_nav a:hover {
+  border-bottom: 2px solid var(--accent-color);
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+/* Main Nav */
+.main_nav {
   display: flex;
 }
+
+/* Right Nav */
 .right_nav {
   display: flex;
-}
-.right_nav li {
-  margin-right: var(--margin);
-  margin-left: var(--margin);
-}
-.right_nav a {
-  color: var(--text-color);
-  font-size: var(--size-a);
+  align-items: center;
 }
 
+/* Right Lists */
+.right_lists {
+  display: flex;
+}
+.right_lists li {
+  margin-left: var(--size-c);
+}
+.right_lists a {
+  font-size: var(--size-c);
+}
+.right_lists i {
+  font-size: var(--size-d);
+}
+
+/* Login */
 .login:hover {
-  color: var(--accent-color);
-  border-radius: 8px;
-  transition: 0.3s;
 }
 
-.sideMenu {
-  width: 250px;
-  height: 100%;
-  position: fixed;
-  z-index: 1;
-  border: 1px solid var(--body-background-color);
-  background-color: var(--header-background-color);
-  box-shadow: 2px 1px 1px 0px var(--shadow);
-}
-.sideBtn {
-  width: 30px;
-  height: 80px;
+/* bg_slider */
+.bg_slider {
+  width: 100%;
+  height: 300px;
   position: absolute;
-  top: 40%;
-  left: 250px;
-  background-color: var(--header-background-color);
-  border-left: 1px solid var(--body-background-color);
-  border-radius: 0 10px 10px 0;
-  cursor: pointer;
-  box-shadow: 2px 1px 1px 0px var(--shadow);
-}
-.sideBtn i {
-  font-size: 40px;
-  position: relative;
-  top: 25%;
-  left: 8px;
-}
-.sideBtn i:hover {
-  color: var(--accent-color);
+  background-color: black;
+  z-index: -1;
+  opacity: 0.5;
 }
 
-.wrap {
+/* main_wraper */
+.main_wraper {
   width: 100%;
-  height: 100%;
-  background-color: var(--body-background-color);
+  height: 100vh%;
+  margin-left: 115px;
 }
 
+/* Main */
+main {
+  display: block;
+  max-width: 1200px;
+  height: 100vh%;
+  margin: auto;
+  z-index: 1;
+}
+
+/* Slider */
+.slider {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
 .slide {
-  width: 100%;
-  height: 100%;
+  width: 950px;
+  height: 300px;
+  background-color: black;
+  border-radius: 10px;
 }
 .slide img {
-  display: flex;
-  margin: auto;
-  width: 1000px;
-  height: 350px;
+  /* width: 950px;
+  height: 300px; */
+}
+
+/* side_slider */
+.side_slider {
+  width: 230px;
+  height: 300px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+/* Side menu */
+menu {
+  display: block;
+  width: 229.75px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--header-background-color);
+  box-shadow: 3px 0px 3px 0px var(--shadow);
+}
+
+/* Side Menu Btn */
+.btn {
+  position: relative;
+  top: 50%;
+  left: 229.75px;
+  width: 25px;
+  height: 80px;
+  background-color: var(--header-background-color);
+  border-left: 1px solid var(--body-background-color);
+  border-radius: 0px 10px 10px 0px;
+  box-shadow: 3px 0px 3px 0px var(--shadow);
+  cursor: pointer;
+}
+.btn i {
+  position: relative;
+  top: 30%;
+  left: 3px;
+  font-size: 30px;
 }
