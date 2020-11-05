@@ -1,0 +1,5 @@
+1. Img Slider(x-axis) 만든거 버튼 꾸미고, 이미지 밑에 input-"radio" 추가하기
+2. 풀페이지 스크롤 이벤트 만들기
+3. 스크롤 이벤트 공부하기
+
+div.container>div.item.item${$}*10
