@@ -1,12 +1,39 @@
 .slider {
   border: 4px solid black;
   border-radius: 10px;
-  width: 499px;
-  height: 498px;
+  max-width: 499px;
+  max-height: 498px;
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
 }
 
 .slide {
   display: flex;
+}
+
+.prev {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  font-size: 40px;
+  border: none;
+  color: #f0f0f0;
+  background-color: rgb(0, 0, 0, 0);
+  outline: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.back {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  font-size: 40px;
+  border: none;
+  color: #f0f0f0;
+  background-color: rgb(0, 0, 0, 0);
+  outline: none;
+  cursor: pointer;
+  z-index: 10;
 }

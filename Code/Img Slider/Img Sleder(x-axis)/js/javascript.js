@@ -8,8 +8,8 @@ let counter = 1;
 const size = carouselSliderImg[0].clientWidth;
 
 carouselSlider.style.transform = 'translateX('+(`${-size * counter}`)+'px)';
-carouselSlider.style.transform = 'translateX('+(`${-size * counter}`)+'px)';
-prevBtn.addEventListener('click' , () => {
+
+prevBtn.addEventListener('click' , () => {  
     if(counter >= carouselSliderImg.length - 1){
         return;
     }else{
@@ -33,10 +33,14 @@ carouselSlider.addEventListener('transitionend', () => {
       counter = 1;
       carouselSlider.style.transition = 'none';
       carouselSlider.style.transform = 'translateX('+(`${-size * counter}`)+'px)';
+    }else{
+      
     }
   if(carouselSliderImg[counter].className =='first'){
     counter = carouselSliderImg.length - 2;
     carouselSlider.style.transition = 'none';
     carouselSlider.style.transform = 'translateX('+(`${-size * counter}`)+'px)';
+    }else{
+
     }
 });
