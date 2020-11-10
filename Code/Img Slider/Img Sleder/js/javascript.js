@@ -38,7 +38,7 @@ backBtn.addEventListener('click' , () => {
 });
 
 
-const radio = document.querySelector('.radio input ');
+const radio = document.querySelector('.radio input');
 const radioFirst = document.querySelector('.radio:first-child');
 const radioClass = document.getElementsByClassName('radio')[0];
 const radicoTag = '<input type="radio" name="radio" class="radio_btn"></input>';
@@ -50,4 +50,5 @@ const radicoTag = '<input type="radio" name="radio" class="radio_btn"></input>';
          }
      }
      loop();
-     console.log(radio.childNodes)
+     console.log(radio.parentNode)
+  
