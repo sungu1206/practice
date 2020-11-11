@@ -66,3 +66,7 @@
   height: 50px;
   background-color: royalblue;
 }
+
+input {
+  color: red;
+}
