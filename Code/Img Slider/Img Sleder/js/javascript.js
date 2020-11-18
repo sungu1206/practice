@@ -40,31 +40,25 @@
 
 
 
-// const radio = document.getElementsByClassName('radio')[0];
-// const createTag = document.createElement('input');
-
-// for(let i = 0; i < items.length; i++){
-//     createTag.type = 'radio';
-//     createTag.name = 'radio_btn';
-//     createTag.value =  '';
-//     radio.appendChild(createTag.cloneNode(true));
-// }
 
 
 
+const sliderDiv = document.querySelector('.slider');
+const items = document.querySelectorAll('.item');
 
+const radioDiv = document.querySelector('.radio');
+const input = document.getElementsByTagName('input');
 
-// const radioSelector = document.querySelectorAll('input');
-// let j = 0;
-
-// function looploop(){
-//     for(j = 0; j < items.length; j++){       
-//         radioSelector[j].addEventListener('click', () => {
-            
-//         });
-//     }
-
-// }
-// console.log(looploop());
-
- 
+const createRadio = document.createElement('input');
+createRadio.type = 'radio';
+createRadio.className = 'radio_btn';
+createRadio.name = 'radio';
+const firstItem = document.querySelector('.item:first-child');
+function looploop(a , b , c , d , e){
+    d.style
+    for(let i = 0; i < items.length; i++){
+        b.appendChild(c.cloneNode(true));
+    }
+    return a , b , c , d , e;
+}
+looploop(items , radioDiv , createRadio , firstItem , input);
