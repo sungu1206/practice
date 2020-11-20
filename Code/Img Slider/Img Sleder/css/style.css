@@ -67,6 +67,6 @@
   background-color: royalblue;
 }
 
-input {
+input[type="radio"].checked {
   color: red;
 }
