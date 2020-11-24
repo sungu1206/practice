@@ -1,11 +1,6 @@
-1. img Slider 새로 만든거 아래 부분에 내일 innerHtml 공부해서 for문 이용해서
- .length만큼 <input type="radio">을 class 안에 넣어보기
+1.grid 만들기
+2.풀페이지 만들기
 
-2. img slider x축으로 움직이는거 만들기 , y축도 만들어보기
-
-3. 풀페이지 작동원리 공부하기
-
-4. display : grid 더 연습하기
 
 
 
