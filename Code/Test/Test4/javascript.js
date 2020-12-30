@@ -37,3 +37,89 @@ if(name === 'SeonGu'){
 }
 
 
+const browser = 'IE';
+switch (browser) {
+    case 'IE':
+        console.log('go away!');
+        break;
+
+    case 'Chrome':
+    case 'Firefox':
+        console.log('love you!');
+    
+    default:
+        console.log('some all..');
+}
+
+
+let i = 3;
+while (i > 0) {
+    console.log(`while: ${i}`);
+    i--;
+}
+
+do {
+    console.log(`do while: ${i}`)
+} while (i>0);
+
+for (i = 3; i > 0; i--) {
+    console.log(`i: ${i}`);
+}
+for(let i = 3; i > 0; i--) {
+    console.log(`inline variavle for: ${i}`);
+}
+
+for(let i = 0; i < 11; i++) {
+    if(i % 2 !== 0){
+        console.log(`q1. ${i}`)
+    }
+}
+// 홀수만
+for(let i = 0; i < 11; i++) {
+    if(i > 8){
+        break;
+    }
+    console.log(`q2. ${i}`);
+}
+// 8일때 멈춤
+
+
+
+//함수
+
+//함수 선언
+function doSomething() {
+    console.log('hello');
+}
+
+// 함수 호출
+doSomething();
+
+let counter = 0;
+
+const add = (a , b) => a + b;
+const minus = (a , b) => a - b;
+const times = (a , b) => a * b;
+const divided = (a , b) => a % b;
+console.log();
+
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+
+prev.addEventListener('click' , () => console.log(counter++));
+
+next.addEventListener('click' , () => console.log(counter--));
+
+function loop(a) {
+    for(let i = 0; i < 5; i++) {
+        console.log(a++)
+    }
+    return loop();
+}
+
+function surprise(operator) {
+    const result = operator(1);
+    console.log(result);
+}
+
+surprise(loop);
