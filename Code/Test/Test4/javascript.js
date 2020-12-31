@@ -97,11 +97,11 @@ doSomething();
 
 let counter = 0;
 
-const add = (a , b) => a + b;
-const minus = (a , b) => a - b;
-const times = (a , b) => a * b;
-const divided = (a , b) => a % b;
-console.log();
+// const add = (a , b) => a + b;
+// const minus = (a , b) => a - b;
+// const times = (a , b) => a * b;
+// const divided = (a , b) => a / b;
+// console.log();
 
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
@@ -110,16 +110,31 @@ prev.addEventListener('click' , () => console.log(counter++));
 
 next.addEventListener('click' , () => console.log(counter--));
 
-function loop(a) {
-    for(let i = 0; i < 5; i++) {
-        console.log(a++)
-    }
-    return loop();
+
+//덧셈을 하는 함수!
+function add(a, b) {
+    const result = a + b;
+    return result;
 }
 
+
+//뺄셈을 하는 함수!
+function minus(a, b) {
+    const result = a - b;
+    return result;
+}
+console.log(add(1, 2));
+
+const sum = add(2, 2);
+console.log(sum);
+
+const addFun = add;
+
+console.log(addFun(3, 4))
+
+// 함수를 실행하는 함수! callback!
 function surprise(operator) {
-    const result = operator(1);
+    const result = operator(2, 1);
     console.log(result);
 }
-
-surprise(loop);
+surprise(minus);
