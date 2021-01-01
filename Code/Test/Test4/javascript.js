@@ -138,3 +138,39 @@ function surprise(operator) {
     console.log(result);
 }
 surprise(minus);
+
+// class
+class Counter {
+    constructor(runEvery5times) {
+        this.counter = 0;
+        this.callback = runEvery5times;
+    }
+    increase() {
+        this.counter++;
+        console.log(this.counter);  
+        if(this.counter % 5 === 0) {
+            this.callback(this.counter);
+        }
+    }
+}
+
+function printHelloNum(num) {
+    console.log(`Hello ${num}`);
+}
+
+function alertHelloNum(num) {
+    alert(`Hello ${num}`)
+}
+
+const createCounter = new Counter(alertHelloNum);
+
+createCounter.increase();
+createCounter.increase();
+createCounter.increase();
+createCounter.increase();
+createCounter.increase();
+createCounter.increase();
+createCounter.increase();
+createCounter.increase();
+createCounter.increase();
+createCounter.increase();
