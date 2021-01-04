@@ -162,7 +162,7 @@ function alertHelloNum(num) {
     alert(`Hello ${num}`)
 }
 
-const createCounter = new Counter(alertHelloNum);
+const createCounter = new Counter(printHelloNum);
 
 createCounter.increase();
 createCounter.increase();
@@ -174,3 +174,66 @@ createCounter.increase();
 createCounter.increase();
 createCounter.increase();
 createCounter.increase();
+
+
+// Getter and setters
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    // 값을 리턴
+    get age() {
+        return this._age;
+    }
+
+    // 값을 설정
+    set age(value) {
+        this._age = (value < 0) ? 0 : value; // 삼항 연산자. 조건? 값1 : 값2 , 조건이 참이면 값1 을 갖고 , 거짓이면 조건 2를 갖는다. 
+    }
+}
+
+const seongu = new Person('Seon Gu Kang', -1);
+
+console.log(seongu.name);
+console.log(seongu.age);
+
+class User {
+    constructor(fristName, lastName, age){
+        this.firstName = fristName;
+        this.lastName = lastName;
+        this.age = age;
+    }
+    
+    get age() {
+        return this._age;
+    }
+
+    set age(value) {
+        this._age = (value < 0) ? 0 : value;
+    }
+}
+
+const User1 = new User('Seon Gu', 'Kang', 25);
+
+console.log(User1.firstName);
+console.log(User1.lastName);
+console.log(User1.age);
+
+class Shape {
+    constructor(width, height, color) {
+        this.width = width;
+        this.height = height;
+        this.color = color;
+    }
+
+    draw() {
+        console.log(`drawing ${this.color} color!`);
+    }
+
+    getArea() {
+        return this.width * this.height;
+    }
+}
+
+class 
