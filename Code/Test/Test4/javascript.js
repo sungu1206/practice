@@ -220,20 +220,26 @@ console.log(User1.firstName);
 console.log(User1.lastName);
 console.log(User1.age);
 
-class Shape {
-    constructor(width, height, color) {
-        this.width = width;
-        this.height = height;
-        this.color = color;
+class vendingMachine {
+    constructor(sprite, coke, number) {
+        this.sprite = sprite;
+        this.coke = coke;
+        this.number = number
+    }
+    
+    get number() {
+        return this._number;
     }
 
-    draw() {
-        console.log(`drawing ${this.color} color!`);
-    }
-
-    getArea() {
-        return this.width * this.height;
+    set number(value) {
+        this._number = (value < 0) ? 0 : value;
     }
 }
 
-class 
+const takeOut = new vendingMachine('사이다', '콜라', 5);
+
+console.log(takeOut.sprite);
+
+console.log(takeOut.coke);
+
+console.log(takeOut.number);
