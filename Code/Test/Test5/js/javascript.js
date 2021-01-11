@@ -1,31 +1,28 @@
 'use strict';
 
-const prevBtn = document.querySelector('.pervBtn');
-const nextBtn = document.querySelector('.nextBtn');
-
+const prevBtn = document.querySelector('#prevBtn');
+const nextBtn = document.querySelector('#nextBtn');
 
 class Slider {
-    constructor() {
-        this.counter = 1;
+    constructor(counter) {
+        this.counter = counter;
     }
 
-    get() {
-
+    get counter() {
+        return this._counter;
     }
 
-    set() {
-
+    set counter(value) {
+        this._counter = (value < 0) ? 0 : value;
     }
 }
 
-const imgSlider = new Slider();
+const imgSlider = new Slider(1);
+console.log(imgSlider.counter);
 
-function prevSlider() {
-    prevBtn.addEventListener('click', () => {
-
+function clickEvent(event) {
+    event.addEventListener('click', () => {
+        
     })
 }
-
-function nextSlider() {
-    
-}
+clickEvent(prevBtn);
