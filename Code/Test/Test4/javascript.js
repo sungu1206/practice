@@ -106,9 +106,14 @@ let counter = 0;
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 
-prev.addEventListener('click' , () => console.log(counter++));
 
-next.addEventListener('click' , () => console.log(counter--));
+function addEvent(clickEvent, consoleEvent) {
+    clickEvent.addEventListener('click', () => {
+        console.log(consoleEvent)
+    })
+}
+addEvent(prev, counter)
+
 
 
 //덧셈을 하는 함수!
