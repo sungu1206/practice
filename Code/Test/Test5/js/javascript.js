@@ -2,6 +2,9 @@
 
 const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn');
+const newList = document.createElement('.list');
+
+console.log(newList);
 
 class Slider {
     constructor(counter) {
@@ -17,12 +20,16 @@ class Slider {
     }
 }
 
-const imgSlider = new Slider(1);
-console.log(imgSlider.counter);
+const slider = new Slider(0);
+console.log(slider.counter);
 
-function clickEvent(event) {
+const crateList = `<li class="new_slider"></li>`
+
+function clickEvent(event, addCounter, newProperty) {
     event.addEventListener('click', () => {
         
     })
 }
-clickEvent(prevBtn);
+clickEvent(prevBtn, slider.counter, newList);
+
+console.log(slider.length);
