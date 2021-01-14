@@ -2,9 +2,8 @@
 
 const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn');
-const newList = document.createElement('.list');
-
-console.log(newList);
+const imgSlider = document.querySelector('.slider');
+const list = document.createElement('li');
 
 class Slider {
     constructor(counter) {
@@ -23,13 +22,10 @@ class Slider {
 const slider = new Slider(0);
 console.log(slider.counter);
 
-const crateList = `<li class="new_slider"></li>`
 
-function clickEvent(event, addCounter, newProperty) {
-    event.addEventListener('click', () => {
-        
+function clickEvent(a, b, c) {
+    a.addEventListener('click', () => {
+        b.appendChild(list.cloneNode(true))
     })
 }
-clickEvent(prevBtn, slider.counter, newList);
-
-console.log(slider.length);
+clickEvent(prevBtn, imgSlider, list);
