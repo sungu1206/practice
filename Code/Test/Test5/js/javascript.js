@@ -3,7 +3,13 @@
 const prevBtn = document.querySelector('#prevBtn');
 const nextBtn = document.querySelector('#nextBtn');
 const imgSlider = document.querySelector('.slider');
+const radio = document.querySelector('.bubble');
+
 const list = document.createElement('li');
+list.setAttribute('class', 'list');
+
+const createRadio = document.createElement('input');
+radio.setAttribute('type', 'radio')
 
 class Slider {
     constructor(counter) {
@@ -20,12 +26,15 @@ class Slider {
 }
 
 const slider = new Slider(0);
-console.log(slider.counter);
 
-
-function clickEvent(a, b, c) {
-    a.addEventListener('click', () => {
-        b.appendChild(list.cloneNode(true))
+function clickEvent() {
+    prevBtn.addEventListener('click', () => {
+        imgSlider.appendChild(list.cloneNode(true))
+        console.log(++slider.counter);
+        if(slider.counter % 3 === 0) {
+            radio.appendChild(createRadio);
+        }
     })
 }
-clickEvent(prevBtn, imgSlider, list);
+clickEvent();
+ 
