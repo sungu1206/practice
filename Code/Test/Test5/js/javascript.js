@@ -1,19 +1,22 @@
 'use strict';
 
-const plusBtn = document.querySelector('#plusBtn');
-const minusBtn = document.querySelector('#minusBtn');
-const imgSlider = document.querySelector('.slider');
-const radio = document.querySelector('.radioBtn');
-const bubble = document.querySelector('.bubble');
+// Buttons (input)
+const minusBtn = document.querySelector(".minus_btn");
+const plusBtn = document.querySelector(".plus_btn");
 
-const list = document.createElement('li');
-list.setAttribute('class', 'list');
+// Slider (ul, li)
+const slider = document.querySelector(".slider");
+const item = document.querySelector('.item');
 
-const createRadio = document.createElement('input');
-createRadio.type = 'radio';
-createRadio.name = 'radio';
-createRadio.setAttribute('class', 'radioBtn');
+// Create Btn
+const createItem = document.createElement("input");
+createItem.type = "radio";
+createItem.name = "radioBtn"
+createItem.setAttribute("class", "radio_btn")
+//
+const bubble = document.querySelector(".bubble");
 
+// Class
 class Slider {
     constructor(counter) {
         this.counter = counter;
@@ -28,17 +31,33 @@ class Slider {
     }
 }
 
-const slider = new Slider(0);
+const imgSlider = new Slider(0);
 
-function clickEvent() {
-    plusBtn.addEventListener('click', () => {
-        imgSlider.appendChild(list.cloneNode(true))
-        console.log(++slider.counter); 
-        if(slider.counter % 3 === 0) {
-            bubble.appendChild(createRadio.cloneNode(false))
-        }
+
+
+
+// Event(recyclable)
+function clickEvent(a, b, c) {
+    a.addEventListener("click", () => { 
+         b.appendChild(c.cloneNode(false))
+    });
+}
+clickEvent(plusBtn, bubble, createItem);
+
+function removeClickEvent(e, f, g) {
+    e.addEventListener("click", () => {
+        f.removeChild(last)
     })
 }
-clickEvent();
- 
-const prevBtn = 
+removeClickEvent(minusBtn, bubble, item)
+
+// function greeting(name) {
+//     alert('Hello ' + name);
+//   }           
+  
+//   function processUserInput(callback) {
+//     var name = prompt('Please enter your name.');
+//     callback(name);
+//   }
+  
+//   processUserInput(greeting);
