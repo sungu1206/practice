@@ -7,22 +7,26 @@
 
 .wrap {
 }
-
-.slider {
+.gallery {
   display: flex;
   width: 950px;
   height: 320px;
   border: 5px solid black;
   border-radius: 10px;
   margin: 0 auto;
+  flex-wrap: wrap;
+}
+.slider {
+  display: flex;
 }
 
 .item {
-  display: flex;
   width: 300px;
   height: 300px;
   border: 4px solid gray;
   margin: auto 0;
+  margin-left: 6.662px;
+  margin-right: 6.662px;
 }
 
 .bubble {
