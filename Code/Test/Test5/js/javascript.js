@@ -1,88 +1,40 @@
 'use strict';
 
-// // Buttons (input)
- 
+//Buttons(input)
+const prevBtn = document.querySelector(".prev_btn");
+const nextBtn = document.querySelector(".next_btn");
 
-// // Gallery
-// const gallery = document.querySelector(".gallery");
+const minusBtn = document.querySelector(".minus_btn");
+const plusBtn = document.querySelector(".plus_btn");
 
-// // Slider (ul, li)
-// const slider = document.querySelector(".slider");
-// const item = document.querySelector('.item');
+//Slider(div)
+const slider = document.querySelector(".slider");
 
-// // Create Btn
-// const createItem = document.createElement("input");
-// createItem.type = "radio";
-// createItem.name = "radioBtn"
-// createItem.setAttribute("class", "radio_btn")
-// //
-// const bubble = document.querySelector(".bubble");
-// //
-// const nextBtn = document.querySelector(".next_btn");
-// //
-// const size = gallery.clientWidth;
-// // Class
-// class Slider {
-//     constructor(counter) {
-//         this.counter = counter;
-//     }
+//Gallery(ul)
+const gallery = document.querySelector(".gallery");
 
-//     get counter() {
-//         return this._counter;
-//     }
+//Item(li)
+const item = document.querySelector(".item");
+const itemAll = document.querySelectorAll(".item");
 
-//     set counter(value) {
-//         this._counter = (value < 0) ? 0 : value;
-//     }
-// }
+function plusEventer(a, b) {
+    a.addEventListener("click", () => {
+        const result1 = b(gallery, item);
+    });
+}
+plusEventer(plusBtn, cloneElemenet);
 
-// const imgSlider = new Slider(0);
-
-// let realCounter = 0;
-
-
-// // Event(recyclable)
-// function clickEvent(a, b, c) {
-//     a.addEventListener("click", () => {
-//         b.appendChild(c.cloneNode(false));
-//     })
-// }
-
-// function clickEventLauncher(operator1) {
-//     const result1 = operator1(plusBtn, slider, item);
-// }
-// clickEventLauncher(clickEvent);
-
-// //
-// function divide(d, e, f, g) {
-//        d.addEventListener("click", () => {
-//     if(e % 3 === 0) {
-//         f.appendChild(g.cloneNode(false)); 
-//     }
-//        });
-// }
-
-// function divideLauncher(operator2) {
-//     const result2 = operator2(plusBtn, realCounter, bubble, createItem);
-// }
-// divideLauncher(divide); 
-
-// function nextButton(i, j, k, l) {
-//     i.addEventListener("click", () => {
-//         j.style.transform = "translateX("+(`${-k * l}`)+"px)";
-//     });
-// }
-// nextButton(nextBtn, slider, size, realCounter)
-// console.log()
-
-function counter(a) {
-    nextBtn.addEventListener("click", () => {
-        console.log(++a);
-    })
+function cloneElemenet(a, b) {
+   a.appendChild(b.cloneNode(false));
 }
 
-const result = counter(0);
+function minusEventer(a, b) {
+    a.addEventListener("click", () => {
+        const result3 = b(gallery, item);
+    });
+}
+minusEventer(minusBtn, removeElement);
 
-function realCounter(b) {
-    
+function removeElement(a, b) {
+   a.removeChild(b);
 }
