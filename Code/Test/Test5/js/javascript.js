@@ -1,5 +1,8 @@
 'use strict';
 
+//Counter
+let counter = 0;
+
 //Buttons(input)
 const prevBtn = document.querySelector(".prev_btn");
 const nextBtn = document.querySelector(".next_btn");
@@ -14,18 +17,23 @@ const slider = document.querySelector(".slider");
 const gallery = document.querySelector(".gallery");
 
 //Item(li)
-const item = document.querySelector(".item");
-const itemAll = document.querySelectorAll(".item");
+const item = document.getElementsByClassName("item");
+
+//cerate
+const createItem = document.createElement("li");
 
 function plusEventer(a, b) {
     a.addEventListener("click", () => {
-        const result1 = b(gallery, item);
+        console.log(++counter);
+        createItem.setAttribute("class", `item${counter}`);
+        const result1 = b(gallery, createItem);
+        console.log(result1);
     });
 }
 plusEventer(plusBtn, cloneElemenet);
 
 function cloneElemenet(a, b) {
-   a.appendChild(b.cloneNode(false));
+    return a.appendChild(b.cloneNode(false));
 }
 
 function minusEventer(a, b) {
@@ -36,5 +44,6 @@ function minusEventer(a, b) {
 minusEventer(minusBtn, removeElement);
 
 function removeElement(a, b) {
-   a.removeChild(b);
+  return a.removeChild(b);
 }
+
