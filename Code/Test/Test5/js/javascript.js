@@ -19,18 +19,19 @@ let counter = 0;
 const items = document.querySelectorAll(".item")[counter];
 
 //
-function plusEventer(a, b) {
-    a.addEventListener("click", () => {
-        const result = b(gallery, item);
-        console.log(result);
-    });
-    return a, b;
+class Slider {
+    constructor() {
+
+    };
+
+    get() {
+
+    };
+
+    set() {
+
+    };
 };
 
-const realPlusEventer = plusEventer(next, setItem);
-console.log(realPlusEventer);
+const realSlider = new Slider();
 
-function setItem(a, b) {
-    a.appendChild(b.cloneNode(false));
-    return a, b;
-}
