@@ -18,19 +18,19 @@ const list = document.createElement("li");
 let counter = 0;
 const items = document.querySelectorAll(".item")[counter];
 
-
-function plusEventer(a, b, c) {
+//
+function plusEventer(a, b) {
     a.addEventListener("click", () => {
-        console.log(counter++);
-        const result1 = b(list, gallery);
-        console.log(result1);
+        const result = b(gallery, item);
+        console.log(result);
     });
+    return a, b;
 };
-const realPlusEventer = plusEventer(plus, setting);
 
-function setting(a, b) {
-    a.setAttribute("class", "item");
-    b.appendChild(a.cloneNode(false));
+const realPlusEventer = plusEventer(next, setItem);
+console.log(realPlusEventer);
+
+function setItem(a, b) {
+    a.appendChild(b.cloneNode(false));
     return a, b;
 }
- 
