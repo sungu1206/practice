@@ -1,37 +1,41 @@
 'use strict';
-// buttons(input)
-const prev = document.querySelector(".prev");
-const next = document.querySelector(".next");
 
-const plus = document.querySelector(".plus");
-const minus = document.querySelector(".minus");
+//Buttons(input)
+const prevBtn = document.querySelector(".prev_btn");
+const nextBtn = document.querySelector(".next_btn");
+const minusBtn = document.querySelector(".minus_btn");
+const plusBtn = document.querySelector(".plus_btn");
 
-// gallery(ul)
+//Slider(div)
+const slider = document.querySelector(".slider");
+
+//Gallery(ul)
 const gallery = document.querySelector(".gallery");
 
-// item(li)
+//Item(li)
 const item = document.querySelector(".item");
-//cerate(li)
-const list = document.createElement("li");
 
-//counter
-let counter = 0;
-const items = document.querySelectorAll(".item")[counter];
-
-//
-class Slider {
+//Class
+class Counter {
     constructor() {
+        this.counter = 0;
+    }
 
-    };
+    increase(result) {
+        this.counter++;
+        console.log(this.counter);
+        if (this.counter % 3 === 0) {
+            result();
+        }
+    }
+    eventer(a, b) {
+        a.addEventListener("click", () => {
+            b();
+        });
+    }
+}
 
-    get() {
+const counter = new Counter();
+counter.eventer(nextBtn, counter.increase)
 
-    };
-
-    set() {
-
-    };
-};
-
-const realSlider = new Slider();
 
