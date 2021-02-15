@@ -15,27 +15,39 @@ const gallery = document.querySelector(".gallery");
 //Item(li)
 const item = document.querySelector(".item");
 
-//Class
+//Bubble
+const bubble = document.querySelector(".bubble");
+//Cerate(li, radio)
+const cerateItem = document.createElement("li");
+cerateItem.setAttribute("class", "item");
+const cerateRadio = document.createElement("input");
+cerateRadio.type = "radio";
+cerateRadio.setAttribute("class", "radio");
+cerateRadio.setAttribute("name", "radio");
+
+//
 class Counter {
     constructor() {
         this.counter = 0;
-    }
+    };
 
-    increase(result) {
+    increase() {
         this.counter++;
         console.log(this.counter);
-        if (this.counter % 3 === 0) {
-            result();
+        if(this.counter % 3 === 0) {
+            console.log("yes!");
+            bubble.appendChild(cerateRadio.cloneNode(false));
         }
-    }
-    eventer(a, b) {
-        a.addEventListener("click", () => {
-            b();
-        });
-    }
-}
-
+    };
+};
 const counter = new Counter();
-counter.eventer(nextBtn, counter.increase)
 
+function eventer() {
+    plusBtn.addEventListener("click", () => {
+        counter.increase();
+        gallery.appendChild(cerateItem.cloneNode(false));
+    });
+};
+
+const realEventer = eventer();
 
