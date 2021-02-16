@@ -17,13 +17,17 @@ const item = document.querySelector(".item");
 
 //Bubble
 const bubble = document.querySelector(".bubble");
+
 //Cerate(li, radio)
 const cerateItem = document.createElement("li");
 cerateItem.setAttribute("class", "item");
 const cerateRadio = document.createElement("input");
-cerateRadio.type = "radio";
+cerateRadio.type = "radio"; 
 cerateRadio.setAttribute("class", "radio");
 cerateRadio.setAttribute("name", "radio");
+
+//Input
+const inputRadio = document.getElementsByClassName("radio");
 
 //
 class Counter {
@@ -51,3 +55,14 @@ function eventer() {
 
 const realEventer = eventer();
 
+function radioEventer() {
+    inputRadio.addEventListener("click", () => {
+        console.log(inputRadio.length-1)
+    })
+    return;
+}
+radioEventer();
+ 
+for(let i = 0; i < inputRadio.length; i++) {
+     
+}
