@@ -9,8 +9,11 @@
 }
 
 :root {
-  --white-color: white;
-  --black-color: black;
+  --white-color: #fafafa;
+  --black-color: #000a12;
+  --lightgray-color: lightgray;
+  --indigo-color: #263238;
+  --lightsteelblue-color: lightsteelblue;
 }
 
 body {
@@ -29,8 +32,8 @@ body {
 .out_line {
   width: 412px;
   height: 869px;
-  background-color: lightsteelblue;
-  border: 2px solid lightgrey;
+  background-color: var(--lightsteelblue-color);
+  border: 2px solid var(--lightgray-color);
   margin: 0 auto;
   border-radius: 30px;
   box-shadow: 0px 15px 15px 12px gray;
@@ -40,7 +43,7 @@ body {
   width: 400px;
   height: 850px;
   background-color: var(--black-color);
-  border: 2px solid lightgrey;
+  border: 2px solid var(--lightgray-color);
   margin: 0 auto;
   margin-top: 8px;
   border-radius: 30px;
@@ -51,9 +54,9 @@ body {
   width: 80px;
   height: 8px;
   background-color: var(--white-color);
-  border-left: 1px solid #263238;
-  border-right: 1px solid #263238;
-  border-bottom: 1px solid #263238;
+  border-left: 1px solid var(--indigo-color);
+  border-right: 1px solid var(--indigo-color);
+  border-bottom: 1px solid var(--indigo-color);
   border-radius: 0px 0px 5px 5px;
   margin: 0 auto;
   position: relative;
@@ -64,23 +67,23 @@ body {
 .screen {
   width: 390px;
   height: 830px;
-  background-color: black;
+  background-color: var(--black-color);
   margin: 0 auto;
   border-radius: 30px;
 }
 
 .screen:hover {
-  background-color: white;
+  background-color: var(--white-color);
   transition: 0.3s ease-in-out;
 }
 
 .volume {
   width: 5px;
   height: 100px;
-  background-color: lightsteelblue;
-  border-top: 2px solid lightgrey;
-  border-left: 2px solid lightgrey;
-  border-bottom: 2px solid lightgrey;
+  background-color: var(--lightsteelblue-color);
+  border-top: 2px solid var(--lightgray-color);
+  border-left: 2px solid var(--lightgray-color);
+  border-bottom: 2px solid var(--lightgray-color);
   border-radius: 3px 0px 0px 3px;
   position: relative;
   left: 747px;
@@ -90,10 +93,10 @@ body {
 .bixby {
   width: 5px;
   height: 50px;
-  background-color: lightsteelblue;
-  border-top: 2px solid lightgrey;
-  border-left: 2px solid lightgrey;
-  border-bottom: 2px solid lightgrey;
+  background-color: var(--lightsteelblue-color);
+  border-top: 2px solid var(--lightgray-color);
+  border-left: 2px solid var(--lightgray-color);
+  border-bottom: 2px solid var(--lightgray-color);
   border-radius: 3px 0px 0px 3px;
   position: relative;
   left: 752px;
@@ -103,10 +106,10 @@ body {
 .power {
   width: 5px;
   height: 50px;
-  background-color: lightsteelblue;
-  border-top: 2px solid lightgrey;
-  border-right: 2px solid lightgrey;
-  border-bottom: 2px solid lightgrey;
+  background-color: var(--lightsteelblue-color);
+  border-top: 2px solid var(--lightgray-color);
+  border-right: 2px solid var(--lightgray-color);
+  border-bottom: 2px solid var(--lightgray-color);
   border-radius: 0px 3px 3px 0px;
   position: relative;
   right: 746px;
@@ -129,7 +132,7 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #263238;
+  background-color: var(--indigo-color);
   opacity: 0.6;
   position: relative;
   top: 2px;
@@ -140,7 +143,7 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #263238;
+  background-color: var(--indigo-color);
   opacity: 0.6;
   position: relative;
   top: 6px;
@@ -151,7 +154,7 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #263238;
+  background-color: var(--indigo-color);
   opacity: 0.6;
   position: relative;
   top: 2px;
