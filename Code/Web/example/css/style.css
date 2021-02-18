@@ -13,13 +13,17 @@
   --black-color: black;
 }
 
+body {
+  background-color: #f0f0f0;
+}
+
 .phone {
   display: flex;
   margin: 0 auto;
   max-width: 1920px;
   max-height: 1080px;
   min-width: 1920px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .out_line {
@@ -29,7 +33,7 @@
   border: 2px solid lightgrey;
   margin: 0 auto;
   border-radius: 30px;
-  box-shadow: 0px 15px 15px 10px gray;
+  box-shadow: 0px 15px 15px 12px gray;
 }
 
 .inner_line {
@@ -107,4 +111,49 @@
   position: relative;
   right: 746px;
   top: 250px;
+}
+
+.camera {
+  display: flex;
+  width: 80px;
+  height: 25px;
+  background-color: black;
+  position: relative;
+  border-radius: 35px;
+  top: 8px;
+  left: 280px;
+  cursor: auto;
+}
+
+.lens1 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #263238;
+  opacity: 0.6;
+  position: relative;
+  top: 2px;
+  left: 5px;
+}
+
+.lens2 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #263238;
+  opacity: 0.6;
+  position: relative;
+  top: 6px;
+  left: 15px;
+}
+
+.lens3 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #263238;
+  opacity: 0.6;
+  position: relative;
+  top: 2px;
+  left: 25px;
 }
