@@ -5,7 +5,7 @@
   list-style: none;
   box-sizing: border-box;
   font-style: inherit;
-  font-family: "Black Han Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 :root {
@@ -66,9 +66,10 @@ body {
 
 .screen {
   width: 390px;
-  height: 830px;
+  height: 810px;
   background-color: var(--black-color);
   margin: 0 auto;
+  margin-top: 10px;
   border-radius: 30px;
 }
 
@@ -123,7 +124,7 @@ body {
   background-color: black;
   position: relative;
   border-radius: 35px;
-  top: 8px;
+  top: 15px;
   left: 280px;
   cursor: auto;
 }
@@ -159,4 +160,39 @@ body {
   position: relative;
   top: 2px;
   left: 25px;
+}
+
+.nav {
+  display: flex;
+}
+
+.clock {
+  font-size: 15px;
+  position: relative;
+  top: -7px;
+  left: 30px;
+  font-weight: bolder;
+}
+
+.fa-battery-three-quarters {
+  transform: rotate(0.75turn);
+  position: relative;
+  top: -7px;
+  left: 230px;
+}
+
+.fa-signal {
+  position: relative;
+  top: -7px;
+  left: 185px;
+}
+
+.fa-wifi {
+  position: relative;
+  top: -7px;
+  left: 140px;
+}
+
+.main_clock {
+  font-size: 100px;
 }
