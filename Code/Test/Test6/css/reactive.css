@@ -1,0 +1,58 @@
+/* Desktop */
+@media screen and (min-width: 2560px) {
+  .screen {
+    max-width: 2560px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .screen {
+    max-width: 1920px;
+  }
+}
+@media screen and (min-width: 1680px) {
+  .screen {
+    max-width: 1680px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .screen {
+    max-width: 1600px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .screen {
+    max-width: 1536px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .screen {
+    max-width: 1440px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .screen {
+    max-width: 1366px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .screen {
+    max-width: 1280px;
+  }
+}
+
+/* Tabelt */
+@media screen and (min-width: 768px) {
+  .screen {
+    max-width: 768px;
+  }
+}
+
+/* Moblie */
+@media screen and (min-width: 412px) {
+  .screen {
+    max-width: 412px;
+  }
+}

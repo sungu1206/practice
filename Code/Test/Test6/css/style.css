@@ -1,39 +1,42 @@
 /* Css Reset */
 @import url(basics_reset.css);
 
-/* Tabelt */
-@media screen and (min-width: 768px) {
-  .phone {
-    max-width: 768px;
-  }
-}
-
-/* Moblie */
-@media screen and (min-width: 412px) {
-  .phone {
-    max-width: 412px;
-  }
-}
-
 /* Variables */
 :root {
-  --white-color: ;
-  --balck-color: ;
+  --bg-color: #fafafa;
+  --border-color: #212121;
 }
 
 .wrap {
-  max-width: 1920px;
-  height: 100vh;
-  background-color: #1c313a;
+  margin: 0 30px;
 }
 
-.container {
-  display: grid;
-  max-width: 1912px;
+.phone {
+  max-width: 1200px;
   height: 100vh;
-  background-color: #718792;
-  margin-left: 30px;
-  margin-right: 30px;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 20px;
+  background-color: #f0f0f0;
+  margin: 0 auto;
+}
+
+.outline {
+  width: 412px;
+  height: 869px;
+  border: 2px solid var(--border-color);
+  border-radius: 30px;
+  margin: 0 auto;
+  position: relative;
+  top: 30px;
+  background-color: var(--bg-color);
+  opacity: 0.8;
+  box-shadow: 0px 10px 15px 10px #808080;
+}
+
+.innerline {
+  width: 382px;
+  height: 809px;
+  border: 2px solid var(--border-color);
+  border-radius: 20px;
+  margin: 0 auto;
+  position: relative;
+  top: 20px;
 }
