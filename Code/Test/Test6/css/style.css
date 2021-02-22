@@ -1,0 +1,39 @@
+/* Css Reset */
+@import url(basics_reset.css);
+
+/* Tabelt */
+@media screen and (min-width: 768px) {
+  .phone {
+    max-width: 768px;
+  }
+}
+
+/* Moblie */
+@media screen and (min-width: 412px) {
+  .phone {
+    max-width: 412px;
+  }
+}
+
+/* Variables */
+:root {
+  --white-color: ;
+  --balck-color: ;
+}
+
+.wrap {
+  max-width: 1920px;
+  height: 100vh;
+  background-color: #1c313a;
+}
+
+.container {
+  display: grid;
+  max-width: 1912px;
+  height: 100vh;
+  background-color: #718792;
+  margin-left: 30px;
+  margin-right: 30px;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
+}
