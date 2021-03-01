@@ -15,7 +15,7 @@ class Clock {
         this.clock2.innerHTML = `${hours < 10 ? "0" + hours : hours }<br>${minutes < 10 ? "0" + minutes : minutes }`;
 
         if(hours > 12) {
-            hours-= 12;
+            hours = "12" - hours;
             this.clock1.innerHTML = `${hours < 10 ? "0" + hours : hours }:${minutes < 10 ? "0" + minutes : minutes }`;
         }
     }
