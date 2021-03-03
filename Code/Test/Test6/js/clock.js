@@ -13,13 +13,13 @@ class Clock {
             const ss = date.getSeconds();
             const month = date.getMonth() + 1;
             const today = date.getDate();
-            const days = date.getDay() - 1;
+            const day = date.getDay() - 1;
  
-            const day = ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"];
+            const days = ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"];
 
-            this.clock1.innerHTML = `${ hh < 10 ? "0" + hh : hh > 12 ? hh - 12 : hh }:${mm < 10 ? "0" + mm : mm }:${ss < 10 ? "0" + ss : ss }`;
-            this.clock2.innerHTML = `${ hh < 10 ? "0" + hh : hh > 12 ? hh - 12 : hh }<br>${mm < 10 ? "0" + mm : mm }`;
-            this.clock3.innerHTML = `${month}월 ${today}일 ${day[days]}`;
+            this.clock1.innerHTML = `${hh < 10 ? "0" + hh : hh > 12 ? hh - 12 : hh}:${mm < 10 ? "0" + mm : mm}`;
+            this.clock2.innerHTML = `${hh < 10 ? "0" + hh : hh > 12 ? hh - 12 : hh}<br>${mm < 10 ? "0" + mm : mm}`;
+            this.clock3.innerHTML = `${month}월 ${today}일 ${days[day]}`;
 
         }, 1000);
     }
