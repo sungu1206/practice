@@ -2,24 +2,24 @@
 
 class Clock {
     constructor() {
-        this.clock1 = document.querySelector(".clock1");
-        this.clock2 = document.querySelector(".clock2");
-        this.clock3 = document.querySelector(".clock3");
+        this.clock1 = document.querySelector(".");
+        this.clock2 = document.querySelector(".");
+        this.clock3 = document.querySelector(".");
         
         setInterval(() => {
             const date = new Date();
             const hh = date.getHours();
             const mm = date.getMinutes();
-            const ss = date.getSeconds();
-            const month = date.getMonth() + 1;
+            // const ss = date.getSeconds();
             const today = date.getDate();
+            const month = date.getMonth() + 1;
             const day = date.getDay() - 1;
  
             const days = ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"];
             
-            this.clock1.innerHTML = `${hh > 12 ? hh - 12 : hh}:${mm < 10 ? "0" + mm : mm}`;
-            this.clock2.innerHTML = `${hh > 12 ? hh - 12 : (hh < 10 ? "0" + hh : hh)}<br>${mm < 10 ? "0" + mm : mm}`;
-            this.clock3.innerHTML = `${month}월 ${today}일 ${days[day]}`;
+            this..innerHTML = `${hh > 12 ? hh - 12 : hh}:${mm < 10 ? "0" + mm : mm}`;
+            this..innerHTML = `${hh > 12 ? hh - 12 : (hh < 10 ? "0" + hh : hh)}<br>${mm < 10 ? "0" + mm : mm}`;
+            this..innerHTML = `${month}월 ${today}일 ${days[day]}`;
 
         }, 1000);
     }
