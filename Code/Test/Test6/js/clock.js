@@ -16,9 +16,9 @@ class Clock {
             const day = date.getDay() - 1;
  
             const days = ["월요일", "화요일", "수요일", "목요일", "금요일", "토요일", "일요일"];
-
-            this.clock1.innerHTML = `${hh < 10 ? "0" + hh : hh > 12 ? hh - 12 : hh}:${mm < 10 ? "0" + mm : mm}`;
-            this.clock2.innerHTML = `${hh < 10 ? "0" + hh : hh > 12 ? hh - 12 : hh}<br>${mm < 10 ? "0" + mm : mm}`;
+            
+            this.clock1.innerHTML = `${hh > 12 ? hh - 12 : hh}:${mm < 10 ? "0" + mm : mm}`;
+            this.clock2.innerHTML = `${hh > 12 ? hh - 12 : (hh < 10 ? "0" + hh : hh)}<br>${mm < 10 ? "0" + mm : mm}`;
             this.clock3.innerHTML = `${month}월 ${today}일 ${days[day]}`;
 
         }, 1000);
