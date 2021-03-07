@@ -3,10 +3,8 @@
 
 /* Variables */
 :root {
-  --bg-color: #fafafa;
-  --border-color: #212121;
-}
-
-.wrap {
-  font-family: "Noto Sans KR", sans-serif;
+  --bright-color: #fafafa;
+  --dark-color: #3a3a3a;
+  --silver-color: #eeeeee;
+  --left-btn-bg: #eeeeee;
 }
