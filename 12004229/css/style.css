@@ -36,26 +36,39 @@ header {
 }
 
 nav {
-    width: 500px;
-    margin: auto 0;
+    width: 600px;
     text-align: center;
 }
 
 nav > .main-menu {
     display: flex;
+    width: 100%;
+    background-color: powderblue;
 }
 
 nav > .main-menu > li {
-    width: 100px;
-    text-align: center;
-    position: relative;
+    display: block;
+    width: 25%;
+}
+
+nav > .main-menu > li:hover > a {
+    background-color: aqua;
 }
 
 nav > .main-menu > li > a {
+    display: block;
+    width: 100%;
+    padding: 8px 0px;
+    font-size: 18px;
+}
+
+.sub-menu > li > a {
+    display: block;
+    padding: 8px 12px;
     
 }
 
-.sub-menu {
-    position: absolute;
-    left: 0px;
+.sub-menu > li:hover {
+    background-color: aquamarine;
+    
 }
