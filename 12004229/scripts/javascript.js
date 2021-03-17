@@ -8,17 +8,21 @@ $(document).ready(function() {
     });
     
     let counter = 0;
+    let size = $(".slide img").height();
+    let img = $(".slide > .images > img");
     
     setInterval(function() {
         counter++;
         console.log(counter);
-        
-        if(counter === $(".slide").children().length) {
+        console.log($(img).length)
+        if(counter === $(img).length) {
             counter = 0;
-        }else {
-            
+            $(".images").css("transition", "none");
+            $(".images").css("transform", "translateY("+(-size * counter)+"px)");
+        }else{
+            $(".images").css("transition", "0.4s");
+            $(".images").css("transform", "translateY("+(-size * counter)+"px)");
         }
     }, 3000);
-    console.log($(".item").width())
 });
 
