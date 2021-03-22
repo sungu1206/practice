@@ -20,4 +20,16 @@ $(document).ready(function() {
             $(".slide").css("transform", "translateY("+(-300 * counter)+"px)");
         }
     }, 3000);
+    
+        const tabBtn = $(".notice-menu a");
+        const tabCont = $(".container > ul");
+        
+    $(".notice-menu > a").click(function() {
+        const target = $(this);
+        const index = target.index();
+        tabBtn.removeClass("active");
+        target.addClass("active");
+        tabCont.css("display", "none");
+        tabCont.eq(index).css("display", "flex");
+    })
 });
