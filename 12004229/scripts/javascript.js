@@ -24,5 +24,27 @@ $(document).ready(function() {
             $(slide).css("transition", "0.4s");
             $(slide).css("transform", "translateY("+(-slideImg * counter)+"px)");
         }
-    }, 3000)
-})
+    }, 3000);
+    
+    //tab
+        const tabBtn = $(".notice > span > a");
+        const tabCont = $(".notice > ul");
+        
+        tabCont.hide().eq(0).show();
+    
+        $(tabBtn).click(function() {
+            const target = $(this);
+            const index = target.index();
+            tabBtn.removeClass("active");
+            target.addClass("active");
+            tabCont.css("display", "none");
+            tabCont.eq(index).css("display", "flex");
+        });
+    
+        $(".notice > .sub-notice > li:first").click(function() {
+            $(".modal").css("display", "block");
+        })
+        $(".modal > .btn > button").click(function() {
+            $(".modal").css("display", "none");
+        })
+});
