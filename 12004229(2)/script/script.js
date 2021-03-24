@@ -28,11 +28,12 @@ $(document).ready(function() {
         }
     }, 3000)
     
-    $(".modal").hide();
+    $(".wrapModal").hide();
     $(".sub-notice > li > ul > li:first").click(function() {
-        $(".modal").show();
+        $(".wrapModal").show();
+        $(".wrapModal").css("background-color", "rgba(0, 0, 0, 0.5)");
     });
     $(".btn > button").click(function() {
-       $(".modal").hide(); 
+       $(".wrapModal").hide(); 
     });
 });
