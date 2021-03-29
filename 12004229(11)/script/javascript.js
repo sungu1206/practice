@@ -3,7 +3,7 @@
       $(".sub-menu").hide();
       
       $(".main-menu > ul > li").mouseenter(function() {
-         $(this).find(".sub-menu").stop().slideDown(200); 
+         $(this).find(".sub-menu").stop().slideDown(400); 
       });
       
       $(".main-menu > ul > li").mouseleave(function() {
