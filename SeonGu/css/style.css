@@ -1,0 +1,14 @@
+/* css reset */
+@import url(/css/reset.css);
+
+/* root */
+:root {
+  --wrap-bg-color: rgb(245, 245, 245);
+}
+
+/*  wrap */
+.wrap {
+  max-width: 1200px;
+  height: 100%;
+  background: var(--wrap-bg-color);
+}

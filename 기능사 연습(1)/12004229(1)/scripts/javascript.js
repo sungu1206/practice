@@ -40,6 +40,7 @@ $(document).ready(function() {
             tabCont.css("display", "none");
             tabCont.eq(index).css("display", "flex");
         });
+    
     //modal
         $(".notice > .sub-notice > li:first").click(function() {
             $(".modal").css("display", "block");
