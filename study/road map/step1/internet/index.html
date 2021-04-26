@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인터넷은 어떻게 작동될까요?</title>
+    <!-- javascript -->
+    <script defer src="/script/javascript.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <h1><a href="https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%EB%84%B7" target="_blank" title="인터넷 - 위키백과, 우리 모두의 백과사전">인터넷</a>은 어떻게 작동될까요?</h1>
+        </header>
+        <hr>
+        <main>
+            <section>
+                <h2>요약</h2>
+                <br>
+                <div class="description">
+                    <p>
+                        인터넷은 웹의 핵심적인 기술입니다. 
+                        인터넷의 가장 기본적인 것은, 
+                        컴퓨터들이 서로 통신 가능한 거대한 네트워크라는 것입니다.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <h2>인터넷의 변화 양상</h2>
+                <br>
+                <div class="description">
+                    <p>
+                        1. 컴퓨터 - 컴퓨터<br>
+                        2. 컴퓨터 - <strong>라우터</strong> - 컴퓨터<br>
+                        3. 컴퓨터 - <strong>라우터</strong> - <strong>라우터</strong> - 컴퓨터<br>
+                        4. 컴퓨터 - 라우터 - <strong>모뎀</strong> - 전화시설<br>
+                        5. 컴퓨터 - 라우터 - 모뎀 - 전화시설 - <strong><abbr title="Internet Service Provider - 우리나라의 경우 KT, LG U+, SKB 등..">ISP</abbr></strong> - 전화시설 - 모뎀 - 라우터 - 컴퓨터 
+                    </p>
+                </div>
+            </section>
+            <section>
+                <h2>단순한 네트워크</h2>
+                <br>
+                <div class="description">
+                    <p>
+                        두 개의 컴퓨터가 통신이 필요할 때, 
+                        우리는 다른 컴퓨터와 물리적으로 (보통 이더넷 케이블) 또는 
+                        무선으로 (예를 들어, WiFi 나 Bluetooth 시스템) 연결되어야 합니다.
+                    </p>
+                </div>
+                <div class="img">
+                    <img src="https://mdn.mozillademos.org/files/8441/internet-schema-1.png" alt="네트워크 연결">
+                    <cite><a href="https://developer.mozilla.org/ko/docs/Learn/Common_questions/How_does_the_Internet_work" target="_blank">(이미지 출처 : MDN)</a></cite>
+                </div>
+                <p>
+                    이러한 네트워크는 두 대의 컴퓨터로 제한되지 않고, 
+                    원하는 만큼의 컴퓨터를 연결 할 수있습니다. <br>
+                    그러나 이렇게 연결할 수록 아래의 사진과 같이 매우 복잡해집니다.
+                </p>
+                <div class="img">
+                    <img src="https://mdn.mozillademos.org/files/8443/internet-schema-2.png" alt="복잡한 네트워크 연결">
+                    <cite><a href="https://developer.mozilla.org/ko/docs/Learn/Common_questions/How_does_the_Internet_work" target="_blank">(이미지 출처 : MDN)</a></cite>
+                </div>
+                <p>
+                    이러한 문제를 해결하기 위해 각 컴퓨터는 <a href="https://ko.wikipedia.org/wiki/%EB%9D%BC%EC%9A%B0%ED%84%B0" target="_blank" title="라우터 - 위키백과, 우리 모두의 백과사전"><strong>라우터</strong></a>라고하는 <span><strong>특수한 소형 컴퓨터</strong></span>에 연결됩니다.<br>
+                    이 라우터의 등장을 기점으로 네트워크는 폭발적으로 확장이됩니다. <br>
+                    <span>라우터의 역할</span>은 단 하나 입니다. 
+                    <span>주어진 컴퓨터에서 보낸 메세지가 올바른 대상 컴퓨터에도착하는지 확인 합니다. </span>
+                </p>
+                <div class="img">
+                    <img src="https://mdn.mozillademos.org/files/8445/internet-schema-3.png" alt="라우터의 등장">
+                    <cite><a href="https://developer.mozilla.org/ko/docs/Learn/Common_questions/How_does_the_Internet_work" target="_blank">(이미지 출처 : MDN)</a></cite>
+                </div>
+            </section>
+            <section>
+                <h2>네트워크 속의 네트워크</h2>
+                <br>
+                <p>
+                    그렇다면, 수백, 수천, 수십억 대의 컴퓨터를 연결하는 것은 어떨까요?<br>
+                    위에서 말했듯이 라우터는 <span><strong>특수한 소형 컴퓨터</strong></span> 라는 점을 기억해야 합니다.
+                </p>
+                <div class="img">
+                    <img src="https://mdn.mozillademos.org/files/8447/internet-schema-4.png" alt="라우터와 라우터 연결">
+                    <cite><a href="https://developer.mozilla.org/ko/docs/Learn/Common_questions/How_does_the_Internet_work" target="_blank">(이미지 출처 : MDN)</a></cite>
+                </div>
+                <p>위의 사진처럼 라우터도 컴퓨터이기 때문에 컴퓨터를 라우터에 연결하고, 라우터와 라우터를 연결하여 무한히 확장할 수 있습니다.</p>
+                <div class="img">
+                    <img src="https://mdn.mozillademos.org/files/8449/internet-schema-5.png" alt="라우터와 라우터의 무한한 연결">
+                    <cite><a href="https://developer.mozilla.org/ko/docs/Learn/Common_questions/How_does_the_Internet_work" target="_blank">(이미지 출처 : MDN)</a></cite>
+                </div>
+                <p>
+                    이러한 네트워크는 우리가 인터넷이라고 부르는 것과 유사하지만, 무엇인가 이상합니다. <br>
+                    적은 양의 케이블로 많은 컴퓨터에 연결이 가능하지만, 아주 먼 곳까지 라우터를 유선 케이블로 연결 하는 것은 매우 비효율 적입니다. <br>
+                    <br>
+                    그렇다면 이 문제를 해결할 수 있는 방법이 있을까요?<br>
+                    <br>
+                    방법은 있었습니다. 우리는 이미 모든 집을 연결한 케이블이 있었습니다. 바로 <span><strong>전화선</strong></span>입니다. <br>
+                    전화선은 이미 세계 어느 곳과도 연결 되어 있으므로 우리가 필요로 하는 완벽한 배선이라고 할 수 있습니다. <br>
+                    하지만, 네트워크와 전화시설을 연결하기 위해서는 <span><strong><a href="https://ko.wikipedia.org/wiki/%EB%AA%A8%EB%8E%80" target="_blank" title="모뎀 - 위키백과, 우리 모두의 백과사전">모뎀</a></strong></span>이라는 특수 장비가 필요합니다. <br>
+                    이 모뎀은 우리 네트워크의 정보를 전화 시설에서 처리 할 수있는 정보로 바꾸며, 그 반대의 경우도 마찬가지입니다.
+                </p>
+                <div class="img">
+                    <img src="https://mdn.mozillademos.org/files/8451/internet-schema-6.png" alt="네트워크와 모뎀">
+                    <cite><a href="https://developer.mozilla.org/ko/docs/Learn/Common_questions/How_does_the_Internet_work" target="_blank">(이미지 출처 : MDN)</a></cite>
+                </div>
+                <p>
+                    그래서 우리의 네트워크는 전화 시설에 연결됩니다. 다음 단계는 우리의 네트워크에서 도달하려는 네트워크로 메시지를 보내는 것입니다. <br>
+                    그렇게하기 위해 네트워크를 인터넷 서비스 제공 업체 (Internet Service Provider, ISP)에 연결합니다. <br>
+                    ISP는 모두 함께 연결되는 몇몇 특수한 라우터를 관리하고 다른 ISP의 라우터에도 액세스 할 수 있는 회사입니다. <br>
+                    따라서 우리 네트워크의 메시지는 ISP 네트워크의 네트워크를 통해 대상 네트워크로 전달됩니다. 인터넷은 이러한 전체 네트워크 인프라로 구성됩니다.
+                </p>
+                <div class="img">
+                    <img src="https://mdn.mozillademos.org/files/8453/internet-schema-7.png" alt="네트워크 인프라">
+                    <cite><a href="https://developer.mozilla.org/ko/docs/Learn/Common_questions/How_does_the_Internet_work" target="_blank">(이미지 출처 : MDN)</a></cite>
+                </div>
+            </section>
+            <section>
+                <h2>컴퓨터 찾기</h2>
+                <br>
+                <p>
+                    컴퓨터에 메시지를 보내려면 메시지를 받을 특정 컴퓨터를 지정해야합니다. <br>
+                    따라서 네트워크에 연결된 모든 컴퓨터에는 IP 주소 (IP는 인터넷 프로토콜을 나타냄)라는 고유한 주소가 있습니다. <br>
+                    주소는 점으로 구분 된 네 개의 숫자로 구성된 주소입니다 . ex) 192.168.2.10.
+                    <br>
+                    컴퓨터는 이러한 주소로 다른 컴퓨터를 찾아가는데 문제가 없습니다. 그러나 우리들은 IP주소를 기억하기 어렵죠. <br>
+                    그래서 우리는 <span><strong>'도메인 이름'</strong></span> 이라고하는 사람이 읽을 수 있는 IP 주소의 이름을 지정할 수 있습니다. <br>
+                    예를 들어 <span>'google.com'</span>은 IP 주소로  <span>'173.194.121.32'</span> 입니다. 따라서 '도메인 이름'은 'IP주소'보다 인터넷을 사용하기에 쉽습니다.
+                </p>
+                <div class="img">
+                    <img src="https://mdn.mozillademos.org/files/8405/dns-ip.png" alt="IP주소와 도메인네임">
+                    <cite><a href="https://developer.mozilla.org/ko/docs/Learn/Common_questions/How_does_the_Internet_work" target="_blank">(이미지 출처 : MDN)</a></cite>
+                </div>
+            </section>
+            <section>
+                <h2>인터넷과 웹</h2>
+                <br>
+                <p>
+                    웹 브라우저를 사용하여 웹을 탐색 할 때 일반적으로 도메인 이름을 사용하여 웹 사이트에 접속합니다. <br>
+                    그것은 인터넷과 웹이 같은 것을 의미할까요? 그렇게 간단하지 않습니다. 앞에서 보았 듯이 <span>인터넷은 수십억 대의 컴퓨터를 모두 연결하는 기술 인프라</span>입니다. <br>
+                    이러한 컴퓨터들 중에 일부는 '웹 서버'로서 웹 브라우저가 이해할 수 있는 서비스를 제공합니다. <br>
+                    인터넷은 인프라이며, <span>웹은 그 인프라 기반 위에 구축된 서비스</span>입니다. <br>
+                    웹 뿐만 아니라 인터넷 위에 구축된 다른 서비스들(이메일, IRC (en-US) 등)도 있음을 알아야합니다.
+                </p>
+            </section>
+        </main>
+        <footer>
+            <div class="source">
+                <cite><a href="https://developer.mozilla.org/ko/docs/Learn/Common_questions/How_does_the_Internet_work">출처 : https://developer.mozilla.org/ko/docs/Learn/Common_questions/How_does_the_Internet_work</a></cite>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
